@@ -15,8 +15,13 @@
 
 #define PERI_TIME_BACKLIGHT_DELAY		16	//128 = 1s
 
+#if 0 // young 20150406
 #define PERI_ADP_OUT_PWR_OFF_TIME       15*128/PERI_TIME_INTERVAL_AD_DETECT //15s	//wwj modify from 15sec to 5sec
 #define PERI_USB_PHY_SUSPEND_TIME       4*128/PERI_TIME_INTERVAL_AD_DETECT
+#else
+#define PERI_ADP_OUT_PWR_OFF_TIME       0*128/PERI_TIME_INTERVAL_AD_DETECT
+#define PERI_USB_PHY_SUSPEND_TIME       2*128/PERI_TIME_INTERVAL_AD_DETECT
+#endif
 
 extern MSG_Q_ID PeripheralTaskQ;
 extern void ap_peripheral_init(void);

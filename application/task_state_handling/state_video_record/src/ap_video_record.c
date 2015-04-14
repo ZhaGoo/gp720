@@ -432,6 +432,7 @@ INT8S ap_video_record_func_key_active(INT32U event)
 
 		ap_video_record_sts_set(~VIDEO_RECORD_BUSY);
 		msgQSend(StorageServiceQ, MSG_STORAGE_SERVICE_TIMER_START, NULL, NULL, MSG_PRI_NORMAL);
+		ap_state_handling_led_off(); // young 20140930
 		DBG_PRINT("Video Record Stop\r\n");
 		return STATUS_OK;
 	} else {

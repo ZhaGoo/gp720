@@ -12,8 +12,10 @@ extern INT32U LDWS_buf_addrs;
 
 INT32U LDWS_Play_Voice_Start_Time = 0;
 INT8U  LDWS_Show_Dbg_Msg = 0;
-INT8U  LDWS_Key_On_flag = 0;
+//INT8U  LDWS_Key_On_flag = 0;
 #endif
+INT8U  LDWS_Key_On_flag = 0; // young 20141018, fix build err
+
 //---
 
 
@@ -153,11 +155,13 @@ void task_peripheral_handling_entry(void *para)
 				ap_TFT_backlight_tmr_check();
 
         		tick++;
+				#if TV_DET_ENABLE // young 20150406
         		if (tick & 0x07) { // once per 250ms
 					if(tv_polling_start) {
     	    			msgQSend(PeripheralTaskQ, MSG_PERIPHERAL_TASK_TV_DETECT, NULL, NULL, MSG_PRI_NORMAL);
 					}
         		}
+				#endif
         		
 				if((tick & 0x1f) == 0) { //once per second
 					if((usb_detect_start == 1) && (power_on_auto_rec_delay_cnt == 0)) {

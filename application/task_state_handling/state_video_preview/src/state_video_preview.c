@@ -176,6 +176,7 @@ void state_video_preview_entry(void *para)
 			case MSG_APQ_CAPTURE_KEY_ACTIVE:	
 			case MSG_APQ_CAPTURE_CONTINUOUS_SHOOTING:
 				if(pic_flag == 0) {
+					ap_state_handling_led_on(); // young 20140930
 					if(ap_video_preview_func_key_active() < 0) {
 						pic_flag = 0;
 					} else {
@@ -282,6 +283,7 @@ void state_video_preview_entry(void *para)
 
         		pic_flag = 0;
 			
+				ap_state_handling_led_off(); // young 20140930
 			break;
  		
         	case MSG_APQ_POWER_KEY_ACTIVE:

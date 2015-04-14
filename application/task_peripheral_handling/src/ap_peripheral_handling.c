@@ -434,6 +434,28 @@ enum {
    C_KEY_HOLD = 0x80
 };
 
+enum {
+#if 0
+   C_KEY_UNKNOWN = 0,
+   C_KEY_MODE = 1,
+   C_KEY_MENU = 2,
+   C_KEY_OK   = 3,
+   C_KEY_UP   = 4,
+   C_KEY_DOWN = 5,
+   C_KEY_SOS  = 6,
+   C_KEY_BL   = 7,
+#else
+	C_KEY_UNKNOWN = 0,
+	C_KEY_UP   = 1,
+	C_KEY_DOWN = 2,
+	C_KEY_MODE = 3,
+	C_KEY_MENU = 4,
+	C_KEY_OK   = 5,
+	C_KEY_SOS  = 6,
+	C_KEY_BL   = 7,
+#endif
+};
+
 static short Median_Filter(short adc_value)
 {
    static short D1 = 0;
@@ -476,6 +498,41 @@ static char AD_Key_Select(short adc_value)
       key = C_KEY_KEY6;
    }
    else*/
+	#if defined(BOARD_X1LH)
+	if (adc_value<1470)
+	{
+		key = C_KEY_KEY3;  // ok
+	}
+	else if (adc_value<2335) //up
+	{
+		key = C_KEY_KEY2;
+	}
+	else if (adc_value<3835)	//down
+	{
+		key = C_KEY_KEY1;
+	}
+	#elif defined(BOARD_170)
+	if (adc_value>2200)
+	{
+		key = C_KEY_OK;
+	}
+	else if (adc_value>1700)
+	{
+		key = C_KEY_MENU;
+	}
+	else if (adc_value>1200)
+	{
+		key = C_KEY_MODE;
+	}
+	else if (adc_value>500)
+	{
+		key = C_KEY_DOWN;
+	}
+	else if (adc_value>180)
+	{
+		key = C_KEY_UP;
+	}
+	#else // BOARD_170
    if (adc_value>2000)
    {  // 
       key = C_KEY_KEY5;
@@ -496,6 +553,7 @@ static char AD_Key_Select(short adc_value)
    {  // 
       key = C_KEY_KEY1;
    }
+   #endif
    else
    {
       key = C_KEY_NULL;
@@ -786,7 +844,7 @@ void ap_peripheral_ad_key_judge(void)
 	}
 	else
 	{	// AD-Key  Detect
-		//DBG_PRINT("adc=0x%x\r\n",ad_value>>4);
+		//DBG_PRINT("adc=%d\r\n",ad_value>>4);
 		key = AD_Key_Get(ad_value>>4);
 		if (key != C_KEY_NULL)
 		{
@@ -804,19 +862,19 @@ void ap_peripheral_ad_key_judge(void)
    			//DBG_PRINT("key = 0x%x\r\n",(unsigned char)key);
 			switch(key)
 			{
-				case 1:
+				case C_KEY_UP:
 					DBG_PRINT("PREV\r\n");					
 					break;
-				case 2:
+				case C_KEY_DOWN:
 					DBG_PRINT("NEXT\r\n");					
 					break;
-				case 3:
+				case C_KEY_MODE:
 					DBG_PRINT("FUNC\r\n");
 					break;
-				case 4:
+				case C_KEY_MENU:
 					DBG_PRINT("MENU\r\n");
 					break;
-				case 5:
+				case C_KEY_OK:
 					DBG_PRINT("OK\r\n");					
 					break;
 				default:
@@ -1333,6 +1391,7 @@ void ap_peripheral_key_register(INT8U type)
 		key_map[0].key_function = (KEYFUNC) ap_peripheral_pw_key_exe;
 
 		ad_key_map[0].key_io = NULL;
+		#if 0
 		ad_key_map[1].key_io = PREVIOUS_KEY;
 		ad_key_map[1].key_function = (KEYFUNC) ap_peripheral_prev_key_exe;
 		ad_key_map[2].key_io = NEXT_KEY;
@@ -1343,6 +1402,31 @@ void ap_peripheral_key_register(INT8U type)
 		ad_key_map[4].key_function = (KEYFUNC) ap_peripheral_menu_key_exe;
 		ad_key_map[5].key_io = OK_KEY;
 		ad_key_map[5].key_function = (KEYFUNC) ap_peripheral_ok_key_exe;
+		#else
+		#if 0
+		ad_key_map[C_KEY_MODE].key_io = FUNCTION_KEY;
+		ad_key_map[C_KEY_MODE].key_function = (KEYFUNC) ap_peripheral_function_key_exe;
+		ad_key_map[C_KEY_MENU].key_io = MENU_KEY;
+		ad_key_map[C_KEY_MENU].key_function = (KEYFUNC) ap_peripheral_menu_key_exe;
+		ad_key_map[C_KEY_OK].key_io = OK_KEY;
+		ad_key_map[C_KEY_OK].key_function = (KEYFUNC) ap_peripheral_ok_key_exe;
+		ad_key_map[C_KEY_UP].key_io = PREVIOUS_KEY;
+		ad_key_map[C_KEY_UP].key_function = (KEYFUNC) ap_peripheral_prev_key_exe;
+		ad_key_map[C_KEY_DOWN].key_io = NEXT_KEY;
+		ad_key_map[C_KEY_DOWN].key_function = (KEYFUNC) ap_peripheral_next_key_exe;
+		#else
+		ad_key_map[C_KEY_UP].key_io = PREVIOUS_KEY;
+		ad_key_map[C_KEY_UP].key_function = (KEYFUNC) ap_peripheral_prev_key_exe;
+		ad_key_map[C_KEY_DOWN].key_io = NEXT_KEY;
+		ad_key_map[C_KEY_DOWN].key_function = (KEYFUNC) ap_peripheral_next_key_exe;
+		ad_key_map[C_KEY_MODE].key_io = FUNCTION_KEY;
+		ad_key_map[C_KEY_MODE].key_function = (KEYFUNC) ap_peripheral_function_key_exe;
+		ad_key_map[C_KEY_MENU].key_io = MENU_KEY;
+		ad_key_map[C_KEY_MENU].key_function = (KEYFUNC) ap_peripheral_menu_key_exe;
+		ad_key_map[C_KEY_OK].key_io = OK_KEY;
+		ad_key_map[C_KEY_OK].key_function = (KEYFUNC) ap_peripheral_ok_key_exe;
+		#endif
+		#endif
 #elif (KEY_TYPE == KEY_TYPE2)		
 		key_map[0].key_io = PW_KEY;
 		key_map[0].key_function = (KEYFUNC) ap_peripheral_pw_key_exe;
@@ -1664,7 +1748,8 @@ static int ap_peripheral_power_key_read(int pin)
 
 void ap_peripheral_adaptor_out_judge(void)
 {
-
+	static int bPowerOff = 0;
+	
 #if USB_PHY_SUSPEND == 1
 	if (s_usbd_pin == 0)
 	{
@@ -1733,7 +1818,16 @@ void ap_peripheral_adaptor_out_judge(void)
 		case 2: //adaptor out state
 			if (!ap_peripheral_power_key_read(ADP_OUT_PIN)) {
 				if ((adp_out_cnt > PERI_ADP_OUT_PWR_OFF_TIME)) {
+					#if 0
 					ap_peripheral_pw_key_exe(&adp_out_cnt);
+					#else
+					if(!bPowerOff)
+					{
+						DBG_PRINT("***Go to Power Off...\r\n");
+						bPowerOff = 1;
+						msgQSend(ApQ, MSG_APQ_POWER_KEY_ACTIVE, NULL, NULL, MSG_PRI_NORMAL);
+					}
+					#endif
 				}
 				adp_cnt = 0;
 			} else {
@@ -1755,7 +1849,12 @@ void ap_peripheral_adaptor_out_judge(void)
 					OSQPost(USBTaskQ, (void *) MSG_USBD_INITIAL);
 				} 
 			} else {
-				adp_out_cnt = 0;
+				//adp_out_cnt = 0;
+				// young 20150406,插usb开机然后立刻拔掉，需要关机
+				if (adp_out_cnt > 3) {
+					adp_out_cnt = 0;
+					adp_status = 2;
+				}
 			}
 			break;
 		default:
@@ -1932,7 +2031,7 @@ void ap_peripheral_pw_key_exe(INT16U *tick_cnt_ptr)
 			DBG_PRINT("Power key OFF\r\n");
 			msgQSend(ApQ, MSG_APQ_POWER_KEY_ACTIVE, NULL, NULL, MSG_PRI_NORMAL);
 		} else {
-			msgQSend(ApQ, MSG_APQ_PARK_MODE_SET, NULL, NULL, MSG_PRI_NORMAL);
+			//msgQSend(ApQ, MSG_APQ_PARK_MODE_SET, NULL, NULL, MSG_PRI_NORMAL);
 //			msgQSend(ApQ, MSG_APQ_NIGHT_MODE_KEY, NULL, NULL, MSG_PRI_NORMAL);
 		}
 	}

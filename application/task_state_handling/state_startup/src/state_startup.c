@@ -253,6 +253,7 @@ void state_startup_entry(void *para)
 //	R_SYSTEM_CLK_CTRL |= 0x1000;	//32768	=>   mode : |= 0x1000
 
 	state_startup_exit();
+	gpio_write_io(LED, DATA_HIGH); // young 20140930, turn off led
 }
 
 

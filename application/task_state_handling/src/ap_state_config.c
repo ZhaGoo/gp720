@@ -32,13 +32,19 @@ void ap_state_config_default_set(void)
 	gp_memset((INT8S *)&Global_User_Optins, 0x00, sizeof(SYSTEM_USER_OPTION));
 	ap_state_resource_user_option_load(&Global_User_Optins);
 	ap_state_config_voice_record_switch_set(1); //mic on
-	ap_state_config_video_resolution_set(2);	//720P
+	//ap_state_config_video_resolution_set(2);	//720P
 	ap_state_config_burst_set(0);	//Á¬ÅÄoff
 	ap_state_config_ev_set(6);
 	ap_state_config_ev1_set(6);
 	ap_state_config_beep_sound_set(1);
 	ap_state_config_capture_date_stamp_set(2);
 	ap_state_config_LDW_to_defalt();
+	// young 20140926
+	ap_state_config_language_set(0); // 0:en 1:TC 2:SC
+	ap_state_config_video_resolution_set(2);	//0:1920x1080   2:1280
+	ap_state_config_seamless_set(3); // 3min
+	ap_state_config_G_sensor_set(0); // 0:off    1:low    2:mid    3:high
+	ap_state_config_auto_off_TFT_BL_set(1);  //0:off   1:on
 #if ENABLE_CHECK_RTC == 1
 	ap_state_config_data_time_save_set_default();
 #endif
@@ -165,6 +171,21 @@ INT8U ap_state_config_white_balance_get(void)
 {
 	return Global_User_Optins.item.alarm_mute2;
 }
+
+// young 20150406 added
+INT8U ap_state_config_seamless_get(void)
+{
+	return Global_User_Optins.item.full_screen;
+}
+
+void ap_state_config_seamless_set(INT8U seamless)
+{
+	if (seamless != ap_state_config_seamless_get()) {
+		Global_User_Optins.item.full_screen = seamless;
+		Global_User_Optins.item.ifdirty = 1;
+	}
+}
+// end
 
 void ap_state_config_video_resolution_set(INT8U resolution)
 {

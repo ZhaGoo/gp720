@@ -13,13 +13,14 @@
 
 /****************************************************************************/
 #include "LDWs.h"
-#if (Enable_Lane_Departure_Warning_System)
+//#if (Enable_Lane_Departure_Warning_System)  // young 20141004, fix build error
 INT32U LDWS_buf_malloc_cnt; 
 INT32U LDWS_buf_addrs;
 INT32U LDWS_buf_size;
 INT8U  LDWS_buf_addrs_idx;
 INT8U  LDWS_start_fifo_idx;
 INT8U  LDWS_end_fifo_idx;
+#if (Enable_Lane_Departure_Warning_System) // young 20141004, fix build error
 extern INT8U LDWS_Enable_Flag;
 extern INT8U ap_LDW_get_from_config(INT8U LDW_choice);
 

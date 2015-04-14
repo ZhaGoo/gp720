@@ -39,14 +39,13 @@ void tft_AUO_A015AN05_init(void);
 void AP_TFT_ClK_144M_set(void)
 {
 	#if USE_PANEL_NAME == PANEL_T27P05_ILI8961	
-		tft_clk_set(TFT_CLK_DIVIDE_8);
+		tft_clk_set(TFT_CLK_DIVIDE_5);
 	#elif USE_PANEL_NAME ==  PANEL_T43
 		tft_clk_set(TFT_CLK_DIVIDE_5);
 	#elif (USE_PANEL_NAME == PANEL_400X240_I80)
 		tft_clk_set(TFT_CLK_DIVIDE_14);
 	#elif (USE_PANEL_NAME == PANEL_T40P00_ILI9342C)
 		tft_clk_set(TFT_CLK_DIVIDE_8);
-		
 	#else	// GPCV1248 EVB   
 		tft_clk_set(TFT_CLK_DIVIDE_8);
 	#endif	
@@ -629,6 +628,37 @@ void tft_T27P05_ILI8961_init(void)
 	gpio_set_port_attribute(SCL_n, 1);
 	gpio_set_port_attribute(SDA_n, 1);
 
+#if	(defined(BOARD_X1LH)||defined(BOARD_170))
+	serial_cmd_1(0x000f);
+	serial_cmd_1(0x0005);
+	serial_cmd_1(0x000f);
+	serial_cmd_1(0x0005);
+
+	serial_cmd_1(0x000f);
+	serial_cmd_1(0x5000);
+	serial_cmd_1(0x3008);
+	serial_cmd_1(0x7040);
+
+	// serial_cmd_1(0x0403);
+	serial_cmd_1(0xc005);
+	serial_cmd_1(0xe013);
+	serial_cmd_1(0x6001);
+
+	R_TFT_HS_WIDTH			= 1;				//	1		=HPW
+	R_TFT_H_START			= 1+260;			//	240		=HPW+HBP
+	R_TFT_H_END				= 1+260+1280;	//	1520	=HPW+HBP+HDE
+	R_TFT_H_PERIOD			= 1+260+1280+39;	//	1560	=HPW+HBP+HDE+HFP
+	R_TFT_VS_WIDTH			= 1;				//	1		=VPW				(DCLK)
+	R_TFT_V_START			= 21-8;			//	21		=VPW+VBP			(LINE)
+	R_TFT_V_END				= 21-8+240;		//	261		=VPW+VBP+VDE		(LINE)
+	R_TFT_V_PERIOD			= 21-8+240+5;		//	262		=VPW+VBP+VDE+VFP	(LINE)
+	R_TFT_LINE_RGB_ORDER    = 0x00;
+
+	tft_signal_inv_set(TFT_VSYNC_INV|TFT_HSYNC_INV, (TFT_ENABLE & TFT_VSYNC_INV)|(TFT_ENABLE & TFT_HSYNC_INV));
+	tft_mode_set(TFT_MODE_UPS052);
+	tft_data_mode_set(TFT_DATA_MODE_8);
+	AP_TFT_ClK_144M_set(); /* FS=66 */
+#else
 	serial_cmd_1(0x055F);
 	cmd_delay(5);
 	serial_cmd_1(0x051F);//reset
@@ -641,12 +671,10 @@ void tft_T27P05_ILI8961_init(void)
 
 	serial_cmd_1(0x0368);//brightness 
 	serial_cmd_1(0x0D40);//contrast 
-	
+
 	serial_cmd_1(0x041B);//8-bit RGB interface//0x0409//0x041B
 	serial_cmd_1(0x1604);//Default Gamma setting  2.2 
 	//serial_cmd_1(0x2f71);//Default Gamma setting  2.2 
- 
-
 
 	R_TFT_HS_WIDTH			= 0;				//	1		=HPW
 	R_TFT_H_START			= 1+240;			//	240		=HPW+HBP
@@ -657,11 +685,12 @@ void tft_T27P05_ILI8961_init(void)
 	R_TFT_V_END				= 21+240;		//	261		=VPW+VBP+VDE		(LINE)
 	R_TFT_V_PERIOD			= 21+240+1;		//	262		=VPW+VBP+VDE+VFP	(LINE)
 	R_TFT_LINE_RGB_ORDER    = 0x00;
-	
+
 	tft_signal_inv_set(TFT_VSYNC_INV|TFT_HSYNC_INV, (TFT_ENABLE & TFT_VSYNC_INV)|(TFT_ENABLE & TFT_HSYNC_INV));
 	tft_mode_set(TFT_MODE_UPS052);
 	tft_data_mode_set(TFT_DATA_MODE_8);
 	AP_TFT_ClK_144M_set();
+#endif
 
 	tft_tft_en_set(TRUE);
 }

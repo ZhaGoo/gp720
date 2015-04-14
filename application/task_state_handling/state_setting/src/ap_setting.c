@@ -2849,8 +2849,10 @@ void ap_setting_show_software_version()
 //	INT8U *zip_buf;
 	INT8U temp1[sizeof(__DATE__)];
 	INT8U *date;
+	INT8U v_size=0;
 	INT16U i;
 	DISPLAY_ICONSHOW icon;
+	char temp2[20];
 
 	icon.transparent = TRANSPARENT_COLOR;
 	icon.icon_w = ICON_SELECTBOX_SUB_WIDTH;
@@ -2864,15 +2866,32 @@ void ap_setting_show_software_version()
 	date = temp1;
 	Get_cmputer_build_time(date);
 	
-	ascii_str.font_color = 255;
+	//ascii_str.font_color = 255;
+	ascii_str.font_color = WHITE_COLOR; // young 20140926
 	ascii_str.font_type = 0;
 	ascii_str.pos_x = ICON_SELECTBOX_SUB_START_X+50;
 	ascii_str.pos_y = 110;
+#if 0
 	ascii_str.str_ptr = "20140115 V1.0 ";
 	for(i=0;i<8;i++)
 	{
 		*(ascii_str.str_ptr+i) = *(date+i);
 	}
+#else
+	memset(temp2, '\0', 20);
+	ascii_str.str_ptr = temp2;
+#if defined(BOARD_170) // young 20140926
+	strcpy(temp2, "170-");
+#else
+	strcpy(temp2, "T16LH-");
+#endif
+	v_size = strlen(ascii_str.str_ptr);
+
+	for(i=0;i<9;i++)
+	{
+		*(ascii_str.str_ptr+v_size+i) = *(date+i);
+	}
+#endif
 	ascii_str.buff_w = TFT_WIDTH;
 	ascii_str.buff_h = TFT_HEIGHT;
 	ap_state_resource_string_ascii_draw((INT16U *) setting_frame_buff, &ascii_str, RGB565_DRAW);	

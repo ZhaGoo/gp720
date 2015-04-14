@@ -1,7 +1,9 @@
 #ifndef _LDWs_H_
 #define _LDWs_H_
 
-#define Enable_Lane_Departure_Warning_System	1
+#include "customer.h"
+
+//#define Enable_Lane_Departure_Warning_System	0
 
 /////////////////////////////////////////////////////////////////////////////////
 

@@ -13,6 +13,10 @@ extern void ap_state_config_ev_set(INT8U ev);
 extern INT8U ap_state_config_ev_get(void);
 extern void ap_state_config_ev1_set(INT8U ev);
 extern INT8U ap_state_config_ev1_get(void);
+// young 20150406 added
+extern void ap_state_config_seamless_set(INT8U seamless);
+extern INT8U ap_state_config_seamless_get(void);
+// end
 extern void ap_state_config_anti_shaking_set(INT8U onoff);
 extern INT8U ap_state_config_anti_shaking_get(void);
 extern void ap_state_config_white_balance_set(INT8U white_balance);

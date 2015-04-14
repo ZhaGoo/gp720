@@ -16,7 +16,9 @@ static sensor_exposure_t jxh22_seInfo;
 static sensor_calibration_t h22_cdsp_calibration;
 static int *p_expTime_table;
 //static int sensor_max_ev_idx;
+#if (Enable_Lane_Departure_Warning_System) // young 20150413, fix build error
 extern INT8U LDWS_Enable_Flag;
+#endif
 extern void sensor_set_fps(INT32U fpsValue);
 extern INT32U sensor_get_fps(void);
 

@@ -243,7 +243,12 @@ void ap_state_handling_connect_to_pc(INT32U prev_state)
 	}
 
 	s_usbd_pin = 1;
+	#if defined(FACTORY_TEST) // young 20140925
+	temp = 1;
+	OSTimeDly(100);
+	#else
 	temp = USB_select_entry(&prev_state,display_frame0);
+	#endif
 
 	msgQSend(StorageServiceQ, MSG_STORAGE_SERVICE_TIMER_STOP, NULL, NULL, MSG_PRI_NORMAL);
 	type = FALSE;
@@ -339,7 +344,9 @@ void ap_state_handling_power_off(INT32U wakeup_flag)
 	INT16U  logo_fd;
 	INT32U  cnt;
 	INT32S  status;
-
+	
+	gpio_write_io(SPEAKER_EN, DATA_HIGH); // young 20150410 open speaker
+	
 	if(!wakeup_flag) {
 		ap_state_handling_clear_all_icon();
 		audio_effect_play(EFFECT_POWER_OFF);
@@ -424,6 +431,8 @@ void ap_state_handling_power_off(INT32U wakeup_flag)
 		}
 	}
 #endif
+	gpio_write_io(IO_B13, DATA_HIGH); // young for gsensor
+
 	gpio_write_io(SPEAKER_EN, DATA_LOW); //turn off local speaker before dac_disable();
 	if(ap_display_get_device()==DISP_DEV_HDMI) { //HDMI
 		ap_state_handling_hdmi_uninit();
@@ -479,6 +488,15 @@ void ap_state_handling_power_off(INT32U wakeup_flag)
 	DBG_PRINT("POWER OFF CONFIG STORE!\r\n");
 	R_INT_GMASK = 1;
 	tft_backlight_en_set(FALSE);
+	// young 20150409
+	#if 0
+	gpio_set_port_attribute(TFT_BL, ATTRIBUTE_LOW);
+	gpio_init_io(TFT_BL, GPIO_OUTPUT);	
+	gpio_write_io(TFT_BL, DATA_LOW);
+	#else
+	gpio_init_io(TFT_BL, GPIO_INPUT);	
+	#endif
+
 	extab_enable_set(EXTA,FALSE);
 #ifdef PWM_CTR_LED 
 	ap_peripheral_PWM_LED_high();

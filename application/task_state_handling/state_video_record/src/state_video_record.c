@@ -6,9 +6,10 @@
 #include "avi_encoder_app.h"
 
 #include "LDWs.h"
-#if (Enable_Lane_Departure_Warning_System)
+//#if (Enable_Lane_Departure_Warning_System) // young 20141004, fix build error
 INT8U LDWS_Enable_Flag = 0;
 INT32S*	LDWs_workmem = NULL;	
+#if (Enable_Lane_Departure_Warning_System) // young 20141004, fix build error
 extern LDWsParameter LDWPar;
 extern INT8U ap_LDW_get_from_config(INT8U LDW_choice);
 #endif
@@ -189,7 +190,18 @@ void state_video_record_entry(void *para, INT32U state)
 				power_on_flag = 0;
 			}
 		} else {
-			power_on_flag = 1; //auto record
+			//power_on_flag = 1; //auto record
+			// young 20150406 added
+			if(gpio_read_io(ADP_OUT_PIN)
+				&& !ap_peripheral_SDC_at_plug_IN_detect())
+			{
+				// adp in & sd card in
+				power_on_flag = 1; //auto record
+			}
+			else
+			{
+				power_on_flag = 0;
+			}
 		}
 	} else if((*(INT32U *) para == STATE_SETTING)|| (*(INT32U *) para == STATE_BROWSE)) { // 菜單後進來
 		ap_video_capture_mode_switch(0, STATE_VIDEO_RECORD); 
@@ -446,6 +458,7 @@ void state_video_record_entry(void *para, INT32U state)
         		if((ap_video_record_sts_get() & VIDEO_RECORD_BUSY)){
         		  #if KEY_TYPE != KEY_TYPE2 && KEY_TYPE != KEY_TYPE4
         			msgQSend(ApQ, MSG_APQ_SOS_KEY_ACTIVE, NULL, NULL, MSG_PRI_NORMAL);
+				    audio_effect_play(EFFECT_CLICK);
         		  #endif
         		}else{
         			ap_video_record_zoom_inout(0);
@@ -455,6 +468,7 @@ void state_video_record_entry(void *para, INT32U state)
         	case MSG_APQ_PREV_KEY_ACTIVE:
       			{
       				INT8U temp;
+					audio_effect_play(EFFECT_CLICK);
       				temp = ap_state_config_voice_record_switch_get();
       				if(temp){
       					ap_state_config_voice_record_switch_set(0);

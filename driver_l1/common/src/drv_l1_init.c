@@ -99,6 +99,7 @@ void drv_l1_init(void)
     // 錄音和放音用同一個 Vref
 	dac_init();						// Initiate DAC
 	i2s_adc_init(0);				// 錄音使用麥克風
+	sys_ldo_codec_ctrl(1, LDO_CODEC_30v); // fix Current noise, young 20150409
   #endif
 
   #if _DRV_L1_ADC==1

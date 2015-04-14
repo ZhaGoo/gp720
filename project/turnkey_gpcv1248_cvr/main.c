@@ -97,6 +97,8 @@ void Main(void *free_memory)
 	free_memory_start = ((INT32U) free_memory + 3) & (~0x3);	// Align to 4-bytes boundry
 	free_memory_end = (INT32U) SDRAM_END_ADDR & ~(0x3);
 
+	gpio_write_io(LED, DATA_HIGH); // young 20140930, turn off led
+
 	// Initiate Operating System
 	OSInit();
  

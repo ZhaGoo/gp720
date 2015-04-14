@@ -254,6 +254,8 @@ void state_usb_entry(void* para1)
 				break;
 				
 			case MSG_USBD_PLUG_IN:
+				tft_backlight_en_set(FALSE); // young 20150406
+
 				sys_msdc_clk_active();
 				/* 將 USB bus的優先權調低，以免過最危險的區域 */
 				R_MEM_M7_BUS_PRIORITY = 0x5F;
@@ -265,6 +267,7 @@ void state_usb_entry(void* para1)
 				break;
 
 			case MSG_USBCAM_PLUG_IN:
+				tft_backlight_en_set(FALSE); // young 20150406
 				usb_status = USB_UVC;
 				OSTimeDly(2);
 				usb_uvc_start();
@@ -275,6 +278,7 @@ void state_usb_entry(void* para1)
 				break;
 				
 			case MSG_USBCAM_PLUG_OUT:
+				tft_backlight_en_set(TRUE); // young 20150406
 				usb_uninitial();
 				usb_webcam_stop();		// 通知別的線程
 				usb_uvc_task_del();		// 也許 Video 還繼續送過來，所以要等 stop 後再結束				
@@ -285,6 +289,8 @@ void state_usb_entry(void* para1)
 				break;
 
 			case MSG_USBD_PLUG_OUT:
+				tft_backlight_en_set(TRUE); // young 20150406
+
 				drv_l2_usbd_msdc_uninit();
 				usb_uninitial();
 				sys_msdc_clk_restore();

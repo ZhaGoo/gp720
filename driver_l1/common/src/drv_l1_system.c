@@ -58,7 +58,9 @@ INT32S system_clk_init(void)
 		sys_ldo28_ctrl(1, LDO_28_28v);	// LDO_2.8v => ON
 	#endif	
 
-	sys_ldo_codec_ctrl(1,LDO_CODEC_33v);  // LDO codec ==> ON
+	//sys_ldo_codec_ctrl(1,LDO_CODEC_33v);  // LDO codec ==> ON
+	// young 20150410, fix current noise
+	sys_ldo_codec_ctrl(1,LDO_CODEC_30v);  // LDO codec ==> ON
 
 	R_SYSTEM_LVR_CTRL = 0x10;				// 設成 1.2V， CorePower 1.32V 用外灌
 

@@ -192,11 +192,11 @@
 
 // GPIO
 #if GPDV_BOARD_VERSION == GPCV1248_V1_0
-	#define USE_PANEL_NAME					PANEL_T27P05_ILI8961
+	//#define USE_PANEL_NAME					PANEL_T27P05_ILI8961
 	#define USE_PANEL_SCREEN_PROPOTION		PANEL_SCREEN_PROPOTION_16_9
 	
-	#define USE_SENSOR_NAME		            SENSOR_GC1004 
-	#define sensor_format				    GC1004_RAW
+	//#define USE_SENSOR_NAME		            SENSOR_SOI_H22
+	//#define sensor_format				    SOI_H22_RAW
 	#define SENSOR_FLIP				        0
 	
 	#define USE_G_SENSOR_NAME		        G_SENSOR_DA380 
@@ -324,5 +324,30 @@
 
 //+++
 #define ENABLE_SAVE_SENSOR_RAW_DATA		0
+
+//===============================young==============================
+// board define BOARD_XXX
+//#define BOARD_T16LH
+//#define BOARD_X1LH
+#define BOARD_170
+
+
+// LCD config 
+#define USE_PANEL_NAME					PANEL_T27P05_ILI8961
+
+// sensor config
+//#define USE_SENSOR_NAME 				SENSOR_OV9712
+//#define USE_SENSOR_NAME 				SENSOR_GC1004
+#define USE_SENSOR_NAME 				SENSOR_SOI_H22
+
+#if (USE_SENSOR_NAME == SENSOR_SOI_H22)
+	#define sensor_format					SOI_H22_RAW
+#elif (USE_SENSOR_NAME == SENSOR_GC1004)
+	#define sensor_format					GC1004_RAW
+#elif (USE_SENSOR_NAME == SENSOR_OV9712)
+	#define sensor_format					OV9712_RAW
+#endif
+
+#define Enable_Lane_Departure_Warning_System	0
 
 #endif //__CUSTOMER_H__
