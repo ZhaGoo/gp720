@@ -16,3 +16,5 @@ insight/
 *.WK3
 
 project/turnkey_gpcv1248_cvr/turnkey_gpcv1248_cvr_Data/
+gp_cardvr_upgrade.bin
+/*.bin

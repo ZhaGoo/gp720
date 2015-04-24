@@ -130,15 +130,15 @@ STATE_MAIN_MENU   ,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 [String]
 //mode :  0->english , 1 -> unicode
 //font path , max length 128
-D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_font\
+D:\GitHub\gp720\resource\DVR_Resource\Export\src_font\
 //languageN , mode , string file
-Font,GulimChe,12,1,0
+Font,Courier,15,1,0
 Language   ,0,English.txt
-Font,Courier,12,1,0
+Font,Courier,15,1,0
 Language   ,1,"Traditional Chinese.txt"
-Font,Courier,12,1,0
+Font,Courier,15,1,0
 Language   ,1,"Simplified Chinese.txt"
-Font,Dotum,14,1,0
+Font,Courier,15,1,0
 Language   ,1,Japanese.txt
 Font,Dotum,14,1,0
 Language   ,1,French.txt
@@ -165,14 +165,14 @@ Language   ,1,Dutch.txt
 
 [Palette]
 //path , max length 128
-D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_image
+D:\GitHub\gp720\resource\DVR_Resource\Export\src_image
 //data
 
 
 
 [Image_With_Palette]
 //path , max length 128
-D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_image\
+D:\GitHub\gp720\resource\DVR_Resource\Export\src_image\
 // Maximum number of image resource on system is 2048 
     // Palette, pal name
 // Image, color format, used pal index, char H_V, image name
@@ -182,7 +182,7 @@ D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_image\
 [Image]
 //max image resource on system is 2048
 //path , max length 128
-D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_image\
+D:\GitHub\gp720\resource\DVR_Resource\Export\src_image\
 // Color format, palette index for 256 color, H_V, image file name
 
 
@@ -190,7 +190,7 @@ D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_image\
 [Audio]
 //max audio resource on system is 2048
 //path , max length 128
-D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_audio\
+D:\GitHub\gp720\resource\DVR_Resource\Export\src_audio\
 //type , data
 
 
@@ -226,7 +226,7 @@ powertime_onoff2, 0, 08:00, 24:00
 
 [Other_Resource]
 //path , max length 128
-D:\work\generalplus\t19hh\higo\resource\DVR_Resource\Export\src_others\
+D:\GitHub\gp720\resource\DVR_Resource\Export\src_others\
 //resource file name
 
 

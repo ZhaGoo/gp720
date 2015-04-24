@@ -768,7 +768,9 @@ enum {
 	STR_TV_MODE           ,
 #endif
 	STR_FREQUENCY         ,
+#if !NO_BUGUANGDENG // young 20150414
 	STR_FLASH			,
+#endif
 	STR_FORMAT1            ,
 	STR_DEFAULT_SETTING   ,
 	STR_VERSION           ,

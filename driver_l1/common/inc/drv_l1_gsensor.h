@@ -7,11 +7,15 @@
 #define P_SENSITIVE_LOW	     0x60
 #define P_SENSITIVE_MID	     0x38
 #define P_SENSITIVE_HIGH	 0x10
-
+#if 0
 #define DMT_SENSITIVE_LOW	 0xB0
 #define DMT_SENSITIVE_MID	 0x60
 #define DMT_SENSITIVE_HIGH	 0x20
-
+#else
+#define DMT_SENSITIVE_LOW	 0xe0
+#define DMT_SENSITIVE_MID	 0xc0
+#define DMT_SENSITIVE_HIGH	 0xa0
+#endif
 //==========================================
 //    DA380 Register
 //==========================================

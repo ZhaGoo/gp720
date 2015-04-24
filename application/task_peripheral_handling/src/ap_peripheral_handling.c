@@ -194,7 +194,7 @@ void ap_peripheral_init(void)
   	//gpio_write_io(IO_A12, 0);
 }
 
-#ifdef PWM_CTR_LED 
+//#ifdef PWM_CTR_LED //young removed 20150423
 void ap_peripheral_PWM_OFF(void)
 {
 	INT8U byPole = 0;
@@ -216,7 +216,7 @@ void ap_peripheral_PWM_LED_high(void)
 	INT8U byEnable = 0;
     ext_rtc_pwm0_enable(byPole, wPeriod, wPreload, byEnable) ; 
 //	ext_rtc_pwm1_enable(byPole, wPeriod, wPreload, byEnable); 
-    DBG_PRINT("PWM0/1 OUT PUT HIGH 750ms, low 68us\r\n"); 
+    //DBG_PRINT("PWM0/1 OUT PUT HIGH 750ms, low 68us\r\n"); 
 
 }
 
@@ -231,7 +231,7 @@ void ap_peripheral_PWM_LED_low(void)
 //    DBG_PRINT("PWM0/1 OUT PUT LOW 750ms, high 68us\r\n"); 
 }
 
-#endif
+//#endif
 
 void ap_peripheral_led_set(INT8U type)
 {
@@ -409,6 +409,8 @@ void ap_peripheral_clr_screen_saver_timer(void)
 	3.5v => 
 	3.4v => 2079
 	外部線路是 1/2 分壓
+
+	3.0v = > 2150    young 20150423      2780 adp plug in
 */
 
 enum {
@@ -501,15 +503,15 @@ static char AD_Key_Select(short adc_value)
 	#if defined(BOARD_X1LH)
 	if (adc_value<1470)
 	{
-		key = C_KEY_KEY3;  // ok
+		key = C_KEY_OK;  // ok
 	}
 	else if (adc_value<2335) //up
 	{
-		key = C_KEY_KEY2;
+		key = C_KEY_UP;
 	}
 	else if (adc_value<3835)	//down
 	{
-		key = C_KEY_KEY1;
+		key = C_KEY_DOWN;
 	}
 	#elif defined(BOARD_170)
 	if (adc_value>2200)
@@ -1174,7 +1176,7 @@ static INT8U ap_peripheral_smith_trigger_battery_level(INT32U direction)
 	static INT8U bat_lvl_cal_bak = (INT8U)BATTERY_Lv3;
 	INT8U bat_lvl_cal; 
 
-	// DBG_PRINT("(%d)\r\n", battery_value_sum);
+	//DBG_PRINT("battery_value_sum = %d\r\n", battery_value_sum);
 	if (battery_value_sum >= BATTERY_Lv3) {
 		bat_lvl_cal = 3;
 	} else if ((battery_value_sum < BATTERY_Lv3) && (battery_value_sum >= BATTERY_Lv2)) {
@@ -1247,9 +1249,33 @@ void ap_peripheral_battery_check_calculate(void)
 	}
 
 	battery_value_sum += (ad_value >> 4);
-	// DBG_PRINT("%d, ",(ad_value>>4));
+	//DBG_PRINT("ad_value = %d\r\n",(ad_value>>4));
 	bat_ck_cnt++;
 	if (bat_ck_cnt >= BATTERY_CNT) {
+
+		#if defined(BOARD_170)
+		static INT8U pwm0PreSta = 3;
+		//DBG_PRINT("battery_value = %d\r\n", (battery_value_sum / BATTERY_CNT));
+		//DBG_PRINT("pwm0PreSta = %d\r\n",pwm0PreSta);
+		if((battery_value_sum / BATTERY_CNT) >= 2780)
+		{
+			if(1 != pwm0PreSta)
+			{
+				pwm0PreSta = 1;
+				ap_peripheral_PWM_LED_high();
+				DBG_PRINT("PWM0 OUT HIGH\r\n");
+			}
+		}
+		else
+		{
+			if(0 != pwm0PreSta)
+			{
+				pwm0PreSta = 0;
+				ap_peripheral_PWM_LED_low();
+				DBG_PRINT("PWM0 OUT LOW\r\n");
+			}
+		}
+		#endif
 
 		bat_lvl_cal = ap_peripheral_smith_trigger_battery_level(direction);
 //		DBG_PRINT("%d,", bat_lvl_cal);
@@ -1704,13 +1730,13 @@ void ap_peripheral_key_judge(void)
 						cnt_clr_flag++;
 					}
 					#endif
-
+				#if 0 // young 20150421 removed
 					if(screen_saver_enable&&key_press)
 					{
 						screen_saver_enable = 0;	
 						msgQSend(ApQ, MSG_APQ_KEY_WAKE_UP, NULL, NULL, MSG_PRI_NORMAL);
 					}
-
+				#endif
 					if (cnt_clr_flag == 0)
 					{
 						key_active_cnt = 0;
@@ -1817,6 +1843,7 @@ void ap_peripheral_adaptor_out_judge(void)
 
 		case 2: //adaptor out state
 			if (!ap_peripheral_power_key_read(ADP_OUT_PIN)) {
+				#if 1 // close power off when adp plug out, young 20150423
 				if ((adp_out_cnt > PERI_ADP_OUT_PWR_OFF_TIME)) {
 					#if 0
 					ap_peripheral_pw_key_exe(&adp_out_cnt);
@@ -1829,6 +1856,7 @@ void ap_peripheral_adaptor_out_judge(void)
 					}
 					#endif
 				}
+				#endif
 				adp_cnt = 0;
 			} else {
 				adp_cnt++;
@@ -2033,6 +2061,10 @@ void ap_peripheral_pw_key_exe(INT16U *tick_cnt_ptr)
 		} else {
 			//msgQSend(ApQ, MSG_APQ_PARK_MODE_SET, NULL, NULL, MSG_PRI_NORMAL);
 //			msgQSend(ApQ, MSG_APQ_NIGHT_MODE_KEY, NULL, NULL, MSG_PRI_NORMAL);
+			#if defined(BOARD_X1LH)
+			msgQSend(ApQ, MSG_APQ_MODE, NULL, NULL, MSG_PRI_NORMAL);
+			audio_effect_play(EFFECT_CLICK);
+			#endif
 		}
 	}
 	*tick_cnt_ptr = 0;

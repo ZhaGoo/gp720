@@ -1,0 +1,67 @@
+G+ Mass Production Tool For GPL329xx Ver 1.0.4 - November 06, 2012
+=================================================================
+- Update the checking rule of HDB version.
+- Add retry mechanism for each step command execution.
+- Add lock scheme to synchronize device enumeration and access between multiple devices.
+- Add step: Set NVRAM type step.
+- Add the version number of script file parser.
+- Support to assign the starting address from HDB file.
+- Add crash report function.
+- Add online updater function.
+- Fixed bug: Cannot show the chip erase progress.
+- Fixed bug: Show red text during downloading.
+- Fixed bug: Failed to download file with size larger than 4GB.
+- Fixed bug: Cannot open step script file when locates at the same directory.
+- Fixed bug: "ChipErase" step cannot show action name in the tag window.
+- Fixed bug: If user gives non-exist file, it should check and prompt correct error message.
+- Fixed bug: Cannot support to download file that is located on network disk.
+- Fixed bug: The step name in log file has to be the same to that of GUI step.
+
+G+ Mass Production Tool For GPL329xx Ver 1.0.3 - October 08, 2011
+=================================================================
+- Add a support function to prevent time-out if polling takes too long.
+- Modify the format of log file.
+- Add new command: support App Header Parsing.
+- Add new command: send nand database.
+- Add to set NVRam Type function.
+- Support to set data length for Vendor Command.
+- Support to load the specific step DLLs&Libs according to the CPU type.
+- Modify Delay Step to provide second and millisecond Options.
+- Add time stamp in the log file.
+- Modify Chip Erase UI to add User and Original Bad block option.
+- Remove GPL83xxx and GPDV6xx Body Name.
+- Modify DRam Calibration UI Setting.
+- Fixed bug: GUI step index does not match with that of script file.
+
+G+ Mass Production Tool For GPL329xx Ver 1.0.2 - June 17, 2011
+=================================================================
+- For chip erase enhance mode, support to specify page index of scan page scheme.
+- Add enhance mode option for NAND chip erase.
+- Modified command protocol to reduce timeout value with 10s and retry only one time.
+- Fixed bug that occurs runtime error randomly if downloading large bin file.
+- Provide option to enable/disable GUI verification checkbox.
+- Add standard error message of Sense Error Code.
+- Support SD/eMMC device Read/Write.
+- Add message dialog to confirm if adding new USB device plugged in PC to download list.
+- Support two-bytes download mode.
+- Add read register function.
+
+
+G+ Mass Production Tool For GPL329xx Ver 1.0.1 -  April 20, 2011
+==============================================================================
+- Remove the function of automatically copy file to code folder after specified target write file
+- Fix up address value been reset after selecting read or write file
+- Synchronize the script file path with main dialog
+- Fixed up pre-register command
+- Code path supports relative path
+- Support boot header parsing 
+- Support to get nand flash information
+- Automatically add device into download list when deivce plug-in PC
+- Support to load customized step DLLs
+- Add port mapping function
+- Support data area step command
+
+G+ Mass Production Tool For GPL329xx Ver 1.0.0 -  January 28, 2011
+==============================================================================
+- First Release
+- Support Step type command

@@ -1,0 +1,1066 @@
+
+< 14-10-22 08:53:12 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 08:53:13:831
+   Step 2 - End Time : 2014/10/22 AM 08:53:13:838
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 08:53:13:838
+   Step 3 - End Time : 2014/10/22 AM 08:53:13:839
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 08:53:13:839
+   Step 4 - End Time : 2014/10/22 AM 08:53:25:272
+   Step 4 ok! Spent Time: 11.438s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 08:53:25:272
+   Step 5 - End Time : 2014/10/22 AM 08:53:38:935
+   Step 5 ok! Spent Time: 13.656s
+   USB Task Finished! Spent Time: 25.94s
+   Device is Pullouted.
+
+< 14-10-22 08:57:47 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 08:57:48:596
+   Step 2 - End Time : 2014/10/22 AM 08:57:48:603
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 08:57:48:604
+   Step 3 - End Time : 2014/10/22 AM 08:57:48:604
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 08:57:48:604
+   Step 4 - End Time : 2014/10/22 AM 08:58:01:864
+   Step 4 ok! Spent Time: 13.265s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 08:58:01:864
+   Step 5 - End Time : 2014/10/22 AM 08:58:16:203
+   Step 5 ok! Spent Time: 14.344s
+   USB Task Finished! Spent Time: 27.609s
+   Device is Pullouted.
+
+< 14-10-22 08:58:21 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Device is Pullouted.
+
+< 14-10-22 09:04:00 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:04:48:500
+   Step 2 - End Time : 2014/10/22 AM 09:04:48:507
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:04:48:507
+   Step 3 - End Time : 2014/10/22 AM 09:04:48:508
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:04:48:508
+   Step 4 - End Time : 2014/10/22 AM 09:05:01:963
+   Step 4 ok! Spent Time: 13.453s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:05:01:963
+   Step 5 - End Time : 2014/10/22 AM 09:05:16:293
+   Step 5 ok! Spent Time: 14.328s
+   USB Task Finished! Spent Time: 27.781s
+   Device is Pullouted.
+
+< 14-10-22 09:05:52 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Device is Pullouted.
+
+< 14-10-22 09:08:10 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:08:13:258
+   Step 2 - End Time : 2014/10/22 AM 09:08:13:266
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:08:13:266
+   Step 3 - End Time : 2014/10/22 AM 09:08:13:266
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:08:13:266
+   Step 4 - End Time : 2014/10/22 AM 09:08:27:194
+   Step 4 ok! Spent Time: 13.921s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:08:27:194
+   Step 5 - End Time : 2014/10/22 AM 09:08:41:527
+   Step 5 ok! Spent Time: 14.329s
+   USB Task Finished! Spent Time: 28.266s
+   Device is Pullouted.
+
+< 14-10-22 09:13:19 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:13:21:768
+   Step 2 - End Time : 2014/10/22 AM 09:13:21:775
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:13:21:775
+   Step 3 - End Time : 2014/10/22 AM 09:13:21:775
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:13:21:775
+   Step 4 - End Time : 2014/10/22 AM 09:13:35:66
+   Step 4 ok! Spent Time: 13.296s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:13:35:66
+   Step 5 - End Time : 2014/10/22 AM 09:13:49:416
+   Step 5 ok! Spent Time: 14.344s
+   USB Task Finished! Spent Time: 27.640s
+   Device is Pullouted.
+
+< 14-10-22 09:16:24 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:16:25:880
+   Step 2 - End Time : 2014/10/22 AM 09:16:25:887
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:16:25:887
+   Step 3 - End Time : 2014/10/22 AM 09:16:25:887
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:16:25:887
+   Step 4 - End Time : 2014/10/22 AM 09:16:39:708
+   Step 4 ok! Spent Time: 13.828s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:16:39:708
+   Step 5 - End Time : 2014/10/22 AM 09:16:54:29
+   Step 5 ok! Spent Time: 14.328s
+   USB Task Finished! Spent Time: 28.156s
+   Device is Pullouted.
+
+< 14-10-22 09:20:04 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:20:07:206
+   Step 2 - End Time : 2014/10/22 AM 09:20:07:213
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:20:07:213
+   Step 3 - End Time : 2014/10/22 AM 09:20:07:214
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:20:07:214
+   Step 4 - End Time : 2014/10/22 AM 09:20:21:218
+   Step 4 ok! Spent Time: 14.16s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:20:21:218
+   Step 5 - End Time : 2014/10/22 AM 09:20:35:560
+   Step 5 ok! Spent Time: 14.328s
+   USB Task Finished! Spent Time: 28.344s
+   Device is Pullouted.
+
+< 14-10-22 09:22:17 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:22:18:582
+   Step 2 - End Time : 2014/10/22 AM 09:22:18:589
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:22:18:589
+   Step 3 - End Time : 2014/10/22 AM 09:22:18:590
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:22:18:590
+   Step 4 - End Time : 2014/10/22 AM 09:22:32:354
+   Step 4 ok! Spent Time: 13.766s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:22:32:354
+   Step 5 - End Time : 2014/10/22 AM 09:22:46:716
+   Step 5 ok! Spent Time: 14.359s
+   USB Task Finished! Spent Time: 28.125s
+   Device is Pullouted.
+
+< 14-10-22 09:27:29 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 09:27:31:147
+   Step 2 - End Time : 2014/10/22 AM 09:27:31:155
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 09:27:31:156
+   Step 3 - End Time : 2014/10/22 AM 09:27:31:157
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 09:27:31:157
+   Step 4 - End Time : 2014/10/22 AM 09:27:44:411
+   Step 4 ok! Spent Time: 13.250s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 09:27:44:411
+   Step 5 - End Time : 2014/10/22 AM 09:27:58:811
+   Step 5 ok! Spent Time: 14.406s
+   USB Task Finished! Spent Time: 27.671s
+   Device is Pullouted.
+
+< 14-10-22 11:10:40 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:10:41:746
+   Step 2 - End Time : 2014/10/22 AM 11:10:41:753
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:10:41:753
+   Step 3 - End Time : 2014/10/22 AM 11:10:41:753
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:10:41:754
+   Step 4 - End Time : 2014/10/22 AM 11:10:51:393
+   Step 4 ok! Spent Time: 9.641s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:10:51:394
+   Step 5 - End Time : 2014/10/22 AM 11:11:04:864
+   Step 5 ok! Spent Time: 13.468s
+   USB Task Finished! Spent Time: 23.125s
+   Device is Pullouted.
+
+< 14-10-22 11:12:14 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:12:29:473
+   Step 2 - End Time : 2014/10/22 AM 11:12:29:480
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:12:29:481
+   Step 3 - End Time : 2014/10/22 AM 11:12:29:481
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:12:29:481
+   Step 4 - End Time : 2014/10/22 AM 11:12:38:784
+   Step 4 ok! Spent Time: 9.312s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:12:38:784
+   Step 5 - End Time : 2014/10/22 AM 11:12:52:279
+   Step 5 ok! Spent Time: 13.485s
+   USB Task Finished! Spent Time: 22.797s
+   Device is Pullouted.
+
+< 14-10-22 11:17:49 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:17:52:591
+   Step 2 - End Time : 2014/10/22 AM 11:17:52:598
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:17:52:598
+   Step 3 - End Time : 2014/10/22 AM 11:17:52:599
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:17:52:599
+   Step 4 - End Time : 2014/10/22 AM 11:18:01:701
+   Step 4 ok! Spent Time: 9.93s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:18:01:701
+   Step 5 - End Time : 2014/10/22 AM 11:18:15:149
+   Step 5 ok! Spent Time: 13.454s
+   USB Task Finished! Spent Time: 22.563s
+   Device is Pullouted.
+
+< 14-10-22 11:21:45 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:21:47:159
+   Step 2 - End Time : 2014/10/22 AM 11:21:47:166
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:21:47:166
+   Step 3 - End Time : 2014/10/22 AM 11:21:47:167
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:21:47:167
+   Step 4 - End Time : 2014/10/22 AM 11:21:56:109
+   Step 4 ok! Spent Time: 8.953s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:21:56:109
+   Step 5 - End Time : 2014/10/22 AM 11:22:09:575
+   Step 5 ok! Spent Time: 13.453s
+   USB Task Finished! Spent Time: 22.406s
+   Device is Pullouted.
+
+< 14-10-22 11:26:08 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:26:11:421
+   Step 2 - End Time : 2014/10/22 AM 11:26:11:428
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:26:11:428
+   Step 3 - End Time : 2014/10/22 AM 11:26:11:429
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:26:11:429
+   Step 4 - End Time : 2014/10/22 AM 11:26:20:205
+   Step 4 ok! Spent Time: 8.781s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:26:20:206
+   Step 5 - End Time : 2014/10/22 AM 11:26:33:670
+   Step 5 ok! Spent Time: 13.469s
+   USB Task Finished! Spent Time: 22.250s
+   Device is Pullouted.
+
+< 14-10-22 11:34:01 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:34:02:762
+   Step 2 - End Time : 2014/10/22 AM 11:34:02:770
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:34:02:770
+   Step 3 - End Time : 2014/10/22 AM 11:34:02:770
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:34:02:770
+   Step 4 - End Time : 2014/10/22 AM 11:34:11:401
+   Step 4 ok! Spent Time: 8.625s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:34:11:401
+   Step 5 - End Time : 2014/10/22 AM 11:34:24:868
+   Step 5 ok! Spent Time: 13.468s
+   USB Task Finished! Spent Time: 22.109s
+   Device is Pullouted.
+
+< 14-10-22 11:36:22 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:36:23:577
+   Step 2 - End Time : 2014/10/22 AM 11:36:23:584
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:36:23:585
+   Step 3 - End Time : 2014/10/22 AM 11:36:23:585
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:36:23:585
+   Step 4 - End Time : 2014/10/22 AM 11:36:32:61
+   Step 4 ok! Spent Time: 8.484s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:36:32:61
+   Step 5 - End Time : 2014/10/22 AM 11:36:45:548
+   Step 5 ok! Spent Time: 13.485s
+   USB Task Finished! Spent Time: 21.969s
+   Device is Pullouted.
+
+< 14-10-22 11:38:41 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:38:47:272
+   Step 2 - End Time : 2014/10/22 AM 11:38:47:279
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:38:47:279
+   Step 3 - End Time : 2014/10/22 AM 11:38:47:279
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:38:47:279
+   Step 4 - End Time : 2014/10/22 AM 11:38:56:521
+   Step 4 ok! Spent Time: 9.235s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:38:56:521
+   Step 5 - End Time : 2014/10/22 AM 11:39:10:215
+   Step 5 ok! Spent Time: 13.687s
+   USB Task Finished! Spent Time: 22.937s
+   Device is Pullouted.
+
+< 14-10-22 11:39:55 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:39:58:432
+   Step 2 - End Time : 2014/10/22 AM 11:39:58:440
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:39:58:441
+   Step 3 - End Time : 2014/10/22 AM 11:39:58:443
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:39:58:443
+   Step 4 - End Time : 2014/10/22 AM 11:40:06:847
+   Step 4 ok! Spent Time: 8.407s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:40:06:847
+   Step 5 - End Time : 2014/10/22 AM 11:40:20:330
+   Step 5 ok! Spent Time: 13.484s
+   USB Task Finished! Spent Time: 21.906s
+   Device is Pullouted.
+
+< 14-10-22 11:48:37 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:48:39:997
+   Step 2 - End Time : 2014/10/22 AM 11:48:40:05
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:48:40:05
+   Step 3 - End Time : 2014/10/22 AM 11:48:40:07
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:48:40:07
+   Step 4 - End Time : 2014/10/22 AM 11:48:51:261
+   Step 4 ok! Spent Time: 11.250s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:48:51:261
+   Step 5 - End Time : 2014/10/22 AM 11:49:11:645
+   Step 5 ok! Spent Time: 20.391s
+   USB Task Finished! Spent Time: 31.657s
+   Device is Pullouted.
+
+< 14-10-22 11:52:56 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 AM 11:53:00:20
+   Step 2 - End Time : 2014/10/22 AM 11:53:00:27
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 AM 11:53:00:27
+   Step 3 - End Time : 2014/10/22 AM 11:53:00:28
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 AM 11:53:00:28
+   Step 4 - End Time : 2014/10/22 AM 11:53:14:579
+   Step 4 ok! Spent Time: 14.562s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 AM 11:53:14:579
+   Step 5 - End Time : 2014/10/22 AM 11:53:28:53
+   Step 5 ok! Spent Time: 13.469s
+   USB Task Finished! Spent Time: 28.31s
+   Device is Pullouted.
+
+< 14-10-22 16:28:02 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 04:28:08:525
+   Step 2 - End Time : 2014/10/22 PM 04:28:08:532
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 04:28:08:532
+   Step 3 - End Time : 2014/10/22 PM 04:28:08:533
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 04:28:08:533
+   Step 4 - End Time : 2014/10/22 PM 04:28:16:644
+   Step 4 ok! Spent Time: 8.110s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 04:28:16:644
+   Step 5 - End Time : 2014/10/22 PM 04:28:30:349
+   Step 5 ok! Spent Time: 13.703s
+   USB Task Finished! Spent Time: 21.828s
+   Device is Pullouted.
+
+< 14-10-22 17:03:05 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:03:07:495
+   Step 2 - End Time : 2014/10/22 PM 05:03:07:502
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:03:07:502
+   Step 3 - End Time : 2014/10/22 PM 05:03:07:503
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:03:07:503
+   Step 4 - End Time : 2014/10/22 PM 05:03:16:17
+   Step 4 ok! Spent Time: 8.516s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:03:16:17
+   Step 5 - End Time : 2014/10/22 PM 05:03:29:828
+   Step 5 ok! Spent Time: 13.812s
+   USB Task Finished! Spent Time: 22.344s
+   Device is Pullouted.
+
+< 14-10-22 17:08:08 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:08:12:424
+   Step 2 - End Time : 2014/10/22 PM 05:08:12:431
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:08:12:431
+   Step 3 - End Time : 2014/10/22 PM 05:08:12:431
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:08:12:431
+   Step 4 - End Time : 2014/10/22 PM 05:08:20:865
+   Step 4 ok! Spent Time: 8.437s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:08:20:865
+   Step 5 - End Time : 2014/10/22 PM 05:08:34:689
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 22.265s
+   Device is Pullouted.
+
+< 14-10-22 17:19:40 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:19:41:786
+   Step 2 - End Time : 2014/10/22 PM 05:19:41:793
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:19:41:793
+   Step 3 - End Time : 2014/10/22 PM 05:19:41:794
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:19:41:794
+   Step 4 - End Time : 2014/10/22 PM 05:19:49:990
+   Step 4 ok! Spent Time: 8.203s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:19:49:990
+   Step 5 - End Time : 2014/10/22 PM 05:20:03:832
+   Step 5 ok! Spent Time: 13.844s
+   USB Task Finished! Spent Time: 22.47s
+   Device is Pullouted.
+
+< 14-10-22 17:23:09 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:23:10:987
+   Step 2 - End Time : 2014/10/22 PM 05:23:10:994
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:23:10:994
+   Step 3 - End Time : 2014/10/22 PM 05:23:10:994
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:23:10:994
+   Step 4 - End Time : 2014/10/22 PM 05:23:19:59
+   Step 4 ok! Spent Time: 8.63s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:23:19:59
+   Step 5 - End Time : 2014/10/22 PM 05:23:32:874
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 21.891s
+   Device is Pullouted.
+
+< 14-10-22 17:26:42 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:26:46:400
+   Step 2 - End Time : 2014/10/22 PM 05:26:46:408
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:26:46:408
+   Step 3 - End Time : 2014/10/22 PM 05:26:46:409
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:26:46:409
+   Step 4 - End Time : 2014/10/22 PM 05:26:54:268
+   Step 4 ok! Spent Time: 7.860s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:26:54:268
+   Step 5 - End Time : 2014/10/22 PM 05:27:08:111
+   Step 5 ok! Spent Time: 13.843s
+   USB Task Finished! Spent Time: 21.718s
+   Device is Pullouted.
+
+< 14-10-22 17:31:33 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:31:40:408
+   Step 2 - End Time : 2014/10/22 PM 05:31:40:415
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:31:40:415
+   Step 3 - End Time : 2014/10/22 PM 05:31:40:415
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:31:40:416
+   Step 4 - End Time : 2014/10/22 PM 05:31:48:177
+   Step 4 ok! Spent Time: 7.766s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:31:48:177
+   Step 5 - End Time : 2014/10/22 PM 05:32:02:06
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 21.594s
+   Device is Pullouted.
+
+< 14-10-22 17:34:08 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:34:09:805
+   Step 2 - End Time : 2014/10/22 PM 05:34:09:813
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:34:09:813
+   Step 3 - End Time : 2014/10/22 PM 05:34:09:813
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:34:09:813
+   Step 4 - End Time : 2014/10/22 PM 05:34:17:477
+   Step 4 ok! Spent Time: 7.657s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:34:17:477
+   Step 5 - End Time : 2014/10/22 PM 05:34:31:240
+   Step 5 ok! Spent Time: 13.765s
+   USB Task Finished! Spent Time: 21.437s
+   Device is Pullouted.
+
+< 14-10-22 17:35:29 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:35:36:493
+   Step 2 - End Time : 2014/10/22 PM 05:35:36:501
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:35:36:501
+   Step 3 - End Time : 2014/10/22 PM 05:35:36:501
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:35:36:501
+   Step 4 - End Time : 2014/10/22 PM 05:35:44:26
+   Step 4 ok! Spent Time: 7.516s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:35:44:26
+   Step 5 - End Time : 2014/10/22 PM 05:35:57:858
+   Step 5 ok! Spent Time: 13.843s
+   USB Task Finished! Spent Time: 21.375s
+   Device is Pullouted.
+
+< 14-10-22 17:39:39 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:39:41:613
+   Step 2 - End Time : 2014/10/22 PM 05:39:41:620
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:39:41:620
+   Step 3 - End Time : 2014/10/22 PM 05:39:41:621
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:39:41:621
+   Step 4 - End Time : 2014/10/22 PM 05:39:49:19
+   Step 4 ok! Spent Time: 7.407s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:39:49:19
+   Step 5 - End Time : 2014/10/22 PM 05:40:02:829
+   Step 5 ok! Spent Time: 13.812s
+   USB Task Finished! Spent Time: 21.219s
+   Device is Pullouted.
+
+< 14-10-22 17:42:55 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:42:56:35
+   Step 2 - End Time : 2014/10/22 PM 05:42:56:42
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:42:56:42
+   Step 3 - End Time : 2014/10/22 PM 05:42:56:42
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:42:56:42
+   Step 4 - End Time : 2014/10/22 PM 05:43:03:388
+   Step 4 ok! Spent Time: 7.344s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:43:03:389
+   Step 5 - End Time : 2014/10/22 PM 05:43:17:294
+   Step 5 ok! Spent Time: 13.890s
+   USB Task Finished! Spent Time: 21.250s
+   Device is Pullouted.
+
+< 14-10-22 17:44:37 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:44:39:666
+   Step 2 - End Time : 2014/10/22 PM 05:44:39:674
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:44:39:674
+   Step 3 - End Time : 2014/10/22 PM 05:44:39:675
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:44:39:675
+   Step 4 - End Time : 2014/10/22 PM 05:44:46:887
+   Step 4 ok! Spent Time: 7.203s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:44:46:887
+   Step 5 - End Time : 2014/10/22 PM 05:45:00:672
+   Step 5 ok! Spent Time: 13.797s
+   USB Task Finished! Spent Time: 21.16s
+   Device is Pullouted.
+
+< 14-10-22 17:47:31 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:47:36:225
+   Step 2 - End Time : 2014/10/22 PM 05:47:36:235
+   Step 2 ok! Spent Time: 0.15s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:47:36:235
+   Step 3 - End Time : 2014/10/22 PM 05:47:36:235
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:47:36:235
+   Step 4 - End Time : 2014/10/22 PM 05:47:43:380
+   Step 4 ok! Spent Time: 7.141s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:47:43:380
+   Step 5 - End Time : 2014/10/22 PM 05:47:57:166
+   Step 5 ok! Spent Time: 13.781s
+   USB Task Finished! Spent Time: 20.937s
+   Device is Pullouted.
+
+< 14-10-22 17:49:33 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:49:36:408
+   Step 2 - End Time : 2014/10/22 PM 05:49:36:415
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:49:36:415
+   Step 3 - End Time : 2014/10/22 PM 05:49:36:415
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:49:36:415
+   Step 4 - End Time : 2014/10/22 PM 05:49:43:505
+   Step 4 ok! Spent Time: 7.94s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:49:43:505
+   Step 5 - End Time : 2014/10/22 PM 05:49:57:334
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 20.922s
+   Device is Pullouted.
+
+< 14-10-22 17:53:54 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:53:56:664
+   Step 2 - End Time : 2014/10/22 PM 05:53:56:671
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:53:56:672
+   Step 3 - End Time : 2014/10/22 PM 05:53:56:673
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:53:56:673
+   Step 4 - End Time : 2014/10/22 PM 05:54:03:679
+   Step 4 ok! Spent Time: 7.0s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:54:03:679
+   Step 5 - End Time : 2014/10/22 PM 05:54:17:511
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 20.844s
+   Device is Pullouted.
+
+< 14-10-22 17:57:37 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:57:41:501
+   Step 2 - End Time : 2014/10/22 PM 05:57:41:508
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:57:41:508
+   Step 3 - End Time : 2014/10/22 PM 05:57:41:509
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:57:41:509
+   Step 4 - End Time : 2014/10/22 PM 05:57:48:401
+   Step 4 ok! Spent Time: 6.891s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:57:48:401
+   Step 5 - End Time : 2014/10/22 PM 05:58:02:219
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 20.719s
+   Device is Pullouted.
+
+< 14-10-22 17:59:45 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 05:59:50:837
+   Step 2 - End Time : 2014/10/22 PM 05:59:50:845
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 05:59:50:845
+   Step 3 - End Time : 2014/10/22 PM 05:59:50:845
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 05:59:50:846
+   Step 4 - End Time : 2014/10/22 PM 05:59:57:688
+   Step 4 ok! Spent Time: 6.843s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 05:59:57:688
+   Step 5 - End Time : 2014/10/22 PM 06:00:11:505
+   Step 5 ok! Spent Time: 13.813s
+   USB Task Finished! Spent Time: 20.672s
+   Device is Pullouted.
+
+< 14-10-22 18:03:18 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:03:24:582
+   Step 2 - End Time : 2014/10/22 PM 06:03:24:589
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:03:24:589
+   Step 3 - End Time : 2014/10/22 PM 06:03:24:589
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:03:24:589
+   Step 4 - End Time : 2014/10/22 PM 06:03:31:387
+   Step 4 ok! Spent Time: 6.797s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:03:31:388
+   Step 5 - End Time : 2014/10/22 PM 06:03:45:201
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 20.625s
+   Device is Pullouted.
+
+< 14-10-22 18:05:07 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:05:09:491
+   Step 2 - End Time : 2014/10/22 PM 06:05:09:498
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:05:09:499
+   Step 3 - End Time : 2014/10/22 PM 06:05:09:499
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:05:09:499
+   Step 4 - End Time : 2014/10/22 PM 06:05:16:221
+   Step 4 ok! Spent Time: 6.719s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:05:16:221
+   Step 5 - End Time : 2014/10/22 PM 06:05:30:50
+   Step 5 ok! Spent Time: 13.828s
+   USB Task Finished! Spent Time: 20.563s
+   Device is Pullouted.
+
+< 14-10-22 18:06:25 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:06:26:291
+   Step 2 - End Time : 2014/10/22 PM 06:06:26:307
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:06:26:307
+   Step 3 - End Time : 2014/10/22 PM 06:06:26:308
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:06:26:308
+   Step 4 - End Time : 2014/10/22 PM 06:06:33:29
+   Step 4 ok! Spent Time: 6.719s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:06:33:30
+   Step 5 - End Time : 2014/10/22 PM 06:06:46:908
+   Step 5 ok! Spent Time: 13.875s
+   USB Task Finished! Spent Time: 20.625s
+   Device is Pullouted.
+
+< 14-10-22 18:08:58 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:08:59:483
+   Step 2 - End Time : 2014/10/22 PM 06:08:59:490
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:08:59:490
+   Step 3 - End Time : 2014/10/22 PM 06:08:59:491
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:08:59:491
+   Step 4 - End Time : 2014/10/22 PM 06:09:07:994
+   Step 4 ok! Spent Time: 8.500s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/t19hh-gc1004-20141022.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:09:07:994
+   Step 5 - End Time : 2014/10/22 PM 06:09:21:624
+   Step 5 ok! Spent Time: 13.641s
+   USB Task Finished! Spent Time: 22.141s
+   Device is Pullouted.
+
+< 14-10-22 18:10:50 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:10:53:81
+   Step 2 - End Time : 2014/10/22 PM 06:10:53:88
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:10:53:88
+   Step 3 - End Time : 2014/10/22 PM 06:10:53:88
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:10:53:88
+   Step 4 - End Time : 2014/10/22 PM 06:10:59:700
+   Step 4 ok! Spent Time: 6.609s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:10:59:701
+   Step 5 - End Time : 2014/10/22 PM 06:11:13:501
+   Step 5 ok! Spent Time: 13.813s
+   USB Task Finished! Spent Time: 20.422s
+   Device is Pullouted.
+
+< 14-10-22 18:12:13 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:12:21:922
+   Step 2 - End Time : 2014/10/22 PM 06:12:21:929
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:12:21:929
+   Step 3 - End Time : 2014/10/22 PM 06:12:21:929
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:12:21:930
+   Step 4 - End Time : 2014/10/22 PM 06:12:28:541
+   Step 4 ok! Spent Time: 6.609s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:12:28:541
+   Step 5 - End Time : 2014/10/22 PM 06:12:42:344
+   Step 5 ok! Spent Time: 13.813s
+   USB Task Finished! Spent Time: 20.422s
+   Device is Pullouted.
+
+< 14-10-22 18:13:26 >==============================================
+Device is Inserted On Driver : [Hub4 Port2] [VER:0, SN:7&181d743d&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 06:13:29:536
+   Step 2 - End Time : 2014/10/22 PM 06:13:29:543
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 06:13:29:543
+   Step 3 - End Time : 2014/10/22 PM 06:13:29:544
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 06:13:29:544
+   Step 4 - End Time : 2014/10/22 PM 06:13:36:86
+   Step 4 ok! Spent Time: 6.547s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 06:13:36:86
+   Step 5 - End Time : 2014/10/22 PM 06:13:49:848
+   Step 5 ok! Spent Time: 13.766s
+   USB Task Finished! Spent Time: 20.313s
+   Device is Pullouted.
+
+< 14-10-22 23:32:44 >==============================================
+Device is Inserted On Driver : [Hub4 Port1] [VER:0, SN:7&2ad724e2&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 11:32:46:673
+   Step 2 - End Time : 2014/10/22 PM 11:32:46:680
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 11:32:46:680
+   Step 3 - End Time : 2014/10/22 PM 11:32:46:681
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 11:32:46:681
+   Step 4 - End Time : 2014/10/22 PM 11:32:54:914
+   Step 4 ok! Spent Time: 8.234s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 11:32:54:914
+   Step 5 - End Time : 2014/10/22 PM 11:33:08:380
+   Step 5 ok! Spent Time: 13.469s
+   USB Task Finished! Spent Time: 21.703s
+   Device is Pullouted.
+
+< 14-10-22 23:38:39 >==============================================
+Device is Inserted On Driver : [Hub4 Port1] [VER:0, SN:7&2ad724e2&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2014/10/22 PM 11:38:41:832
+   Step 2 - End Time : 2014/10/22 PM 11:38:41:840
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2014/10/22 PM 11:38:41:840
+   Step 3 - End Time : 2014/10/22 PM 11:38:41:840
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2014/10/22 PM 11:38:41:840
+   Step 4 - End Time : 2014/10/22 PM 11:38:55:572
+   Step 4 ok! Spent Time: 13.734s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh\tools/gpcv1248_spifc_pack_/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2014/10/22 PM 11:38:55:572
+   Step 5 - End Time : 2014/10/22 PM 11:39:09:67
+   Step 5 ok! Spent Time: 13.500s
+   USB Task Finished! Spent Time: 27.234s
+   Device is Pullouted.

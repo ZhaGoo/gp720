@@ -44,7 +44,7 @@ void ap_state_config_default_set(void)
 	ap_state_config_video_resolution_set(2);	//0:1920x1080   2:1280
 	ap_state_config_seamless_set(3); // 3min
 	ap_state_config_G_sensor_set(0); // 0:off    1:low    2:mid    3:high
-	ap_state_config_auto_off_TFT_BL_set(1);  //0:off   1:on
+	ap_state_config_auto_off_TFT_BL_set(1);  //0:off   1:3min  2:5min  3:10min
 #if ENABLE_CHECK_RTC == 1
 	ap_state_config_data_time_save_set_default();
 #endif

@@ -1,0 +1,46 @@
+
+< 15-04-11 15:47:05 >==============================================
+Device is Inserted On Driver : [Hub1 Port2] [VER:0, SN:6&2151e485&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2015/04/11 PM 03:47:06:965
+   Step 2 - End Time : 2015/04/11 PM 03:47:06:971
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2015/04/11 PM 03:47:06:972
+   Step 3 - End Time : 2015/04/11 PM 03:47:06:972
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2015/04/11 PM 03:47:06:972
+   Step 4 - End Time : 2015/04/11 PM 03:47:18:347
+   Step 4 ok! Spent Time: 11.372s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh/higo/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2015/04/11 PM 03:47:18:347
+   Step 5 - End Time : 2015/04/11 PM 03:47:31:616
+   Step 5 ok! Spent Time: 13.260s
+   USB Task Finished! Spent Time: 24.648s
+   Device is Pullouted.
+
+< 15-04-11 15:49:36 >==============================================
+Device is Inserted On Driver : [Hub1 Port2] [VER:0, SN:6&2151e485&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\work\generalplus\t19hh\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2015/04/11 PM 03:49:37:780
+   Step 2 - End Time : 2015/04/11 PM 03:49:37:788
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2015/04/11 PM 03:49:37:788
+   Step 3 - End Time : 2015/04/11 PM 03:49:37:788
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2015/04/11 PM 03:49:37:789
+   Step 4 - End Time : 2015/04/11 PM 03:49:49:105
+   Step 4 ok! Spent Time: 11.326s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\work\generalplus\t19hh/higo/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2015/04/11 PM 03:49:49:106
+   Step 5 - End Time : 2015/04/11 PM 03:50:02:413
+   Step 5 ok! Spent Time: 13.306s
+   USB Task Finished! Spent Time: 24.632s
+   Device is Pullouted.

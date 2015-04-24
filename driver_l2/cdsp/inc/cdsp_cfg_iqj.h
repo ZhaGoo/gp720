@@ -45,8 +45,8 @@
 	// Ex: 	Y_SCALE = 0x21, Y_OFFSET range = 0~-7, 
 	//		Y_SCALE = 0x22, Y_OFFSET range = 0~-15,  
 	//========================================================================= 
-	#define	DAYLIGHT_HUE_Y_OFFSET  	-4		//-128 ~ +127	
-	#define	DAYLIGHT_SAT_Y_SCALE  	0x21	//Default:0x20
+	#define	DAYLIGHT_HUE_Y_OFFSET  	-2		//-128 ~ +127	-4
+	#define	DAYLIGHT_SAT_Y_SCALE  	0x20	//Default:0x20      0x21
 	
 	//=========================================================================
 	// Purpose :  set the sturatin for single color
@@ -54,8 +54,8 @@
 	// DAYLIGHT_SAT_U_SCALE: Blue, upper 0x20: deep blue, less 0x20: light blue
 	// DAYLIGHT_SAT_V_SCALE: Red,  upper 0x20: deep red,  less 0x20: light red
 	//========================================================================= 
-	#define	DAYLIGHT_SAT_U_SCALE  	0x38	//Default:0x20 // blud
-	#define	DAYLIGHT_SAT_V_SCALE  	0x48	//Default:0x20 // red
+	#define	DAYLIGHT_SAT_U_SCALE  	0x35	//Default:0x20 // blud   0x38
+	#define	DAYLIGHT_SAT_V_SCALE  	0x45	//Default:0x20 // red    0x48
 	
 	//=========================================================================
 	// Purpose :  set the sharpness
@@ -88,8 +88,8 @@
 	// Ex: 	Y_SCALE = 0x21, Y_OFFSET range = 0~-7, 
 	//		Y_SCALE = 0x22, Y_OFFSET range = 0~-15,  
 	//=========================================================================	
-	#define	NIGHT_HUE_Y_OFFSET  	4		//-128 ~ +127	
-	#define	NIGHT_SAT_Y_SCALE  		0x20	//Default:0x20
+	#define	NIGHT_HUE_Y_OFFSET  	3		//-128 ~ +127	4
+	#define	NIGHT_SAT_Y_SCALE  		0x1d	//Default:0x20      0x20
 	
 	//=========================================================================
 	// Purpose :  set the sturatin

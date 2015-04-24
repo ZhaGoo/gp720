@@ -329,10 +329,10 @@ void ap_state_handling_clear_all_icon(void)
 }
 
 INT8U display_str_battery_low = 0;
-#ifdef PWM_CTR_LED 
+//#ifdef PWM_CTR_LED //young removed 20150423
 extern void ap_peripheral_PWM_LED_high(void);
 extern void ap_peripheral_PWM_OFF(void);
-#endif
+//#endif
 
 void ext_rtc_alarm_isr_callback(void);
 void ext_rtc_wakeup_isr_callback(void);

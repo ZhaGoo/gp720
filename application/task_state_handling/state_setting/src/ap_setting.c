@@ -323,7 +323,12 @@ void ap_setting_reply_action(INT32U state,INT32U state1, INT8U *tag, STOR_SERV_P
 		}
 		msgQSend(StorageServiceQ, MSG_STORAGE_SERVICE_TIMER_START, NULL, NULL, MSG_PRI_NORMAL);
 	}
+
+	#if defined(BOARD_X1LH)
+	ap_setting_page_draw(STATE_BROWSE,state1, tag);
+	#else
 	ap_setting_page_draw(state,state1, tag);
+	#endif
 }
 
 void ap_setting_page_draw(INT32U state,INT32U state1, INT8U *tag)
@@ -1002,6 +1007,102 @@ void ap_setting_background_icon_string_draw(INT8U flag)
 	ap_setting_icon_draw((INT16U *)setting_frame_buff, icon_background_ok, &icon, SETTING_ICON_NORMAL_DRAW);
 }
 
+
+#if defined(BOARD_X1LH)
+void ap_setting_background_draw(INT32U state,INT32U state1,STRING_INFO *str, INT8U flag)
+{
+	DISPLAY_ICONSHOW icon = {32, 32, TRANSPARENT_COLOR, 0, 0};
+	t_STRING_TABLE_STRUCT str_res;
+	INT8U type;
+	
+	icon.icon_w = ICON_TOP_BAR_WIDTH;
+	icon.icon_h = ICON_TOP_BAR_HEIGHT;
+	icon.pos_y = ICON_TOP_BAR_START_Y;
+	if (state == STATE_BROWSE) {
+		//str->str_idx = STR_SETUP;
+		str->str_idx = STR_PLAYBACK;
+		ap_state_resource_string_resolution_get(str, &str_res);
+		str->pos_x = (TFT_WIDTH - str_res.string_width)-10;
+		str->pos_y = 23;
+		ap_state_resource_string_draw((INT16U *)setting_frame_buff, str, RGB565_DRAW);
+		icon.pos_x = ICON_TOP_BAR_START_X;
+
+	}else if(state == STATE_VIDEO_RECORD) {
+		//str->str_idx = STR_SETUP;
+		str->str_idx = STR_VIDEO;
+		ap_state_resource_string_resolution_get(str, &str_res);
+		str->pos_x = (TFT_WIDTH - str_res.string_width)-10;
+		str->pos_y = 23;
+		ap_state_resource_string_draw((INT16U *)setting_frame_buff, str, RGB565_DRAW);
+		icon.pos_x = ICON_TOP_BAR_START_X+50;
+
+	}else if(state == STATE_VIDEO_PREVIEW) {
+		//str->str_idx = STR_SETUP;
+		str->str_idx = STR_CAPTURE;
+		ap_state_resource_string_resolution_get(str, &str_res);
+		str->pos_x = (TFT_WIDTH - str_res.string_width)-10;
+		str->pos_y = 23;
+		ap_state_resource_string_draw((INT16U *)setting_frame_buff, str, RGB565_DRAW);
+		icon.pos_x = ICON_TOP_BAR_START_X+100;
+
+	}
+	else{
+		//str->str_idx = state_str;
+		str->str_idx = STR_SETUP;
+		ap_state_resource_string_resolution_get(str, &str_res);
+		str->pos_x = (TFT_WIDTH - str_res.string_width)-10;
+		str->pos_y = 23;
+		ap_state_resource_string_draw((INT16U *)setting_frame_buff, str, RGB565_DRAW);
+		icon.pos_x = ICON_TOP_BAR_START_X+150;
+	}
+	ap_setting_show_GPZP_file((INT8U*)"TOPBAR.GPZP",(INT16U *)setting_frame_buff,&icon,SETTING_ICON_NORMAL_DRAW);
+
+
+	ap_setting_background_icon_string_draw(flag);
+	
+	icon.icon_w = 32;
+	icon.icon_h = 32;
+	icon.pos_x = ICON_TOP_BAR_START_X+((ICON_TOP_BAR_WIDTH-icon.icon_w)>>1);
+	icon.pos_y = 10;
+	if (state == STATE_SETTING) {
+		type = SETTING_ICON_NORMAL_DRAW;
+	}else{
+		type = SETTING_ICON_BLUE1_COLOR;
+	}
+
+	ap_setting_icon_draw((INT16U *)setting_frame_buff, icon_review, &icon, type);
+
+	icon.pos_x = ICON_TOP_BAR_START_X+((ICON_TOP_BAR_WIDTH-icon.icon_w)>>1)+50;
+	icon.pos_y = 10;
+	if (state == STATE_SETTING) {
+		type = SETTING_ICON_BLUE1_COLOR;
+	}else{
+		type = SETTING_ICON_NORMAL_DRAW;
+	}
+	ap_setting_icon_draw((INT16U *)setting_frame_buff, icon_video, &icon, type);
+
+
+	icon.pos_x = ICON_TOP_BAR_START_X+((ICON_TOP_BAR_WIDTH-icon.icon_w)>>1)+100;
+	icon.pos_y = 10;
+	if (state == STATE_SETTING) {
+		type = SETTING_ICON_BLUE1_COLOR;
+	}else{
+		type = SETTING_ICON_NORMAL_DRAW;
+	}
+	ap_setting_icon_draw((INT16U *)setting_frame_buff, icon_capture, &icon, type);
+	
+	icon.pos_x = ICON_TOP_BAR_START_X+((ICON_TOP_BAR_WIDTH-icon.icon_w)>>1)+150;
+	icon.pos_y = 10;
+	if (state == STATE_SETTING) {
+		type = SETTING_ICON_BLUE1_COLOR;
+	}else{
+		type = SETTING_ICON_NORMAL_DRAW;
+	}
+	ap_setting_icon_draw((INT16U *)setting_frame_buff, icon_base_setting, &icon, type);
+
+
+}
+#else
 void ap_setting_background_draw(INT32U state,INT32U state1,STRING_INFO *str, INT8U flag)
 {
 	DISPLAY_ICONSHOW icon = {32, 32, TRANSPARENT_COLOR, 0, 0};
@@ -1060,7 +1161,7 @@ void ap_setting_background_draw(INT32U state,INT32U state1,STRING_INFO *str, INT
 
 
 }
-
+#endif
 void ap_setting_page_page_number(INT8U *tag,INT8U flag)
 {
 	char page_num[]= "1/1";
@@ -1119,12 +1220,20 @@ void ap_setting_browse_set(void)
 
 void ap_setting_basic_set(void)
 {
+#if (defined(BOARD_X1LH)||defined(BOARD_170))
+	// no park mode, no flash
+	setting_item.item_start = STR_DATE_TIME2;
+	setting_item.item_max = 9;
+#else  // NO_PARK_MODE
+
 	setting_item.item_start = STR_PARK_MODE;
 #if TV_OUT_MENU
 	setting_item.item_max = 12;
 #else
 	setting_item.item_max = 11;
 #endif
+
+#endif // NO_PARK_MODE
 }
 extern INT16U *setting_record_table[];
 extern INT16U *setting_capture_table[];
@@ -2014,6 +2123,8 @@ INT8U ap_setting_right_menu_active(STRING_INFO *str, INT8U type, INT8U *sub_tag)
 
 			}
 			break;
+
+#if !NO_BUGUANGDENG  // young 20150414
 		case STR_FLASH:
 			curr_tag = ap_state_config_flash_LED_get();
 			if (type == STRING_DRAW) {
@@ -2032,6 +2143,8 @@ INT8U ap_setting_right_menu_active(STRING_INFO *str, INT8U type, INT8U *sub_tag)
 			}
 			
 			break;
+#endif
+
 //		case STR_FORMAT:
 		case STR_FORMAT1:
 			if (type == STRING_DRAW) {
@@ -2400,6 +2513,27 @@ EXIT_FLAG_ENUM ap_setting_menu_key_active(INT8U *tag, INT8U *sub_tag, INT32U *st
 	}
 	if (*sub_tag == 0xFF) {
 		*tag = 0;
+
+		#if defined(BOARD_X1LH)
+		if(*state == STATE_BROWSE)
+		{
+			*state = STATE_VIDEO_RECORD;
+		}
+		else if(*state == STATE_VIDEO_RECORD)
+		{
+			*state = STATE_VIDEO_PREVIEW;
+		}
+		else if(*state == STATE_VIDEO_PREVIEW)
+		{
+			*state = STATE_SETTING;
+		}
+		else if(*state == STATE_SETTING)
+		{
+			*state = STATE_VIDEO_RECORD;
+			OSQPost(StateHandlingQ, (void *) STATE_VIDEO_RECORD);
+			return EXIT_BREAK;
+		}
+		#else
 		if (*state != STATE_SETTING) {
 			*state = STATE_SETTING;
 		} else {
@@ -2407,6 +2541,7 @@ EXIT_FLAG_ENUM ap_setting_menu_key_active(INT8U *tag, INT8U *sub_tag, INT32U *st
 			OSQPost(StateHandlingQ, (void *) *state);
 			return EXIT_BREAK;
 		}
+		#endif
 	} else {
 		TIME_T	g_time;
 		if(setting_item.stage == STR_DATE_TIME){
@@ -2882,6 +3017,8 @@ void ap_setting_show_software_version()
 	ascii_str.str_ptr = temp2;
 #if defined(BOARD_170) // young 20140926
 	strcpy(temp2, "170-");
+#elif defined(BOARD_X1LH) // young 20140926
+	strcpy(temp2, "X1LH-");
 #else
 	strcpy(temp2, "T16LH-");
 #endif
@@ -2967,6 +3104,7 @@ INT8U Get_cmputer_build_time(INT8U *buf)
 		*(temp0+6+i) = date[i];
 	
 		*(temp0+8) = ' ';
+	*(temp0+8) = '\0'; // young 20140926
 
 //	print_string("data:%s\r\n", temp );
 //	print_string("data0:%s\r\n", temp0 );

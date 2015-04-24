@@ -39,7 +39,7 @@ void tft_AUO_A015AN05_init(void);
 void AP_TFT_ClK_144M_set(void)
 {
 	#if USE_PANEL_NAME == PANEL_T27P05_ILI8961	
-		tft_clk_set(TFT_CLK_DIVIDE_5);
+		tft_clk_set(TFT_CLK_DIVIDE_7);
 	#elif USE_PANEL_NAME ==  PANEL_T43
 		tft_clk_set(TFT_CLK_DIVIDE_5);
 	#elif (USE_PANEL_NAME == PANEL_400X240_I80)
@@ -631,24 +631,28 @@ void tft_T27P05_ILI8961_init(void)
 #if	(defined(BOARD_X1LH)||defined(BOARD_170))
 	serial_cmd_1(0x000f);
 	serial_cmd_1(0x0005);
+
 	serial_cmd_1(0x000f);
 	serial_cmd_1(0x0005);
 
 	serial_cmd_1(0x000f);
 	serial_cmd_1(0x5000);
-	serial_cmd_1(0x3008);
+	
+	serial_cmd_1(0x3009);
 	serial_cmd_1(0x7040);
-
 	// serial_cmd_1(0x0403);
 	serial_cmd_1(0xc005);
 	serial_cmd_1(0xe013);
 	serial_cmd_1(0x6001);
 
-	R_TFT_HS_WIDTH			= 1;				//	1		=HPW
+	//serial_cmd_1(0x000f);
+	//serial_cmd_1(0x0005);
+
+	R_TFT_HS_WIDTH			= 3;				//	1		=HPW
 	R_TFT_H_START			= 1+260;			//	240		=HPW+HBP
 	R_TFT_H_END				= 1+260+1280;	//	1520	=HPW+HBP+HDE
 	R_TFT_H_PERIOD			= 1+260+1280+39;	//	1560	=HPW+HBP+HDE+HFP
-	R_TFT_VS_WIDTH			= 1;				//	1		=VPW				(DCLK)
+	R_TFT_VS_WIDTH			= 3;				//	1		=VPW				(DCLK)
 	R_TFT_V_START			= 21-8;			//	21		=VPW+VBP			(LINE)
 	R_TFT_V_END				= 21-8+240;		//	261		=VPW+VBP+VDE		(LINE)
 	R_TFT_V_PERIOD			= 21-8+240+5;		//	262		=VPW+VBP+VDE+VFP	(LINE)

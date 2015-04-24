@@ -1,0 +1,46 @@
+
+< 15-04-22 09:13:31 >==============================================
+Device is Inserted On Driver : [Hub1 Port1] [VER:0, SN:6&e9833e0&0#{53f]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\GitHub\gp720\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2015/04/22 AM 09:13:34:598
+   Step 2 - End Time : 2015/04/22 AM 09:13:34:604
+   Step 2 ok! Spent Time: 0.16s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2015/04/22 AM 09:13:34:605
+   Step 3 - End Time : 2015/04/22 AM 09:13:34:605
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2015/04/22 AM 09:13:34:606
+   Step 4 - End Time : 2015/04/22 AM 09:13:45:343
+   Step 4 ok! Spent Time: 10.733s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\GitHub\gp720/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2015/04/22 AM 09:13:45:343
+   Step 5 - End Time : 2015/04/22 AM 09:13:58:657
+   Step 5 ok! Spent Time: 13.322s
+   USB Task Finished! Spent Time: 24.71s
+   Device is Pullouted.
+
+< 15-04-22 13:52:18 >==============================================
+Device is Inserted On Driver : [Hub1 Port2] [VER:0, SN:6&2151e485&0#{53]
+   Begin the USB Task...
+   Step 1 disable...
+   Begin Step 2... Action: Write, Chip: RAM, Address: 0xF8002000, File: D:\GitHub\gp720\tools\G+CodePacker 1.0.9 Patch 001\USBMassProductionTool/code/gp15b_ispbin.bin
+   Step 2 - Start Time : 2015/04/22 PM 01:52:20:676
+   Step 2 - End Time : 2015/04/22 PM 01:52:20:682
+   Step 2 ok! Spent Time: 0.0s
+   Begin Step 3... Action: Jump to Function, Chip: RAM, Address: 0xF8002000
+   Step 3 - Start Time : 2015/04/22 PM 01:52:20:683
+   Step 3 - End Time : 2015/04/22 PM 01:52:20:683
+   Step 3 ok! Spent Time: 0.0s
+   Begin Step 4... Action: Erase, Chip: SPI Nor Flash, Address: 0x0000, Length: 40
+   Step 4 - Start Time : 2015/04/22 PM 01:52:20:683
+   Step 4 - End Time : 2015/04/22 PM 01:52:25:55
+   Step 4 ok! Spent Time: 4.368s
+   Begin Step 5... Action: Write, Chip: SPI Nor Flash, Address: 0x0000, File: D:\GitHub\gp720/gp_cardvr_upgrade.bin
+   Step 5 - Start Time : 2015/04/22 PM 01:52:25:55
+   Step 5 - End Time : 2015/04/22 PM 01:52:40:926
+   Step 5 ok! Spent Time: 15.865s
+   USB Task Finished! Spent Time: 20.249s
+   Device is Pullouted.

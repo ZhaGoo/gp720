@@ -180,9 +180,9 @@ void sw_rtc_unlock(void)
 }
 #endif
 
-#ifdef PWM_CTR_LED 
+//#ifdef PWM_CTR_LED //young removed 20150423
 extern void ap_peripheral_PWM_LED_low(void);
-#endif
+//#endif
 void rtc_init(void)
 {
 	INT32U dwTimeOut ;
@@ -196,6 +196,9 @@ void rtc_init(void)
 #ifdef PWM_CTR_LED 
 	ap_peripheral_PWM_LED_low();
 #endif
+	#if defined(BOARD_170) // young 20150423
+	ap_peripheral_PWM_LED_high();
+	#endif
 	ext_rtc_time_get(&rtc_time);
 
 	// update time to RTC

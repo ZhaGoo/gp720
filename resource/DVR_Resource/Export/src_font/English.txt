@@ -39,15 +39,15 @@ Off
 Off
 On
 Off
-2G
-4G
-8G
+High
+Normal
+Low
 On/Off
 Car type
 Sensitivity
 Area Choice
 Start Speed
-On\Off Sound 
+On\Off Sound
 Sedan Car
 Commercial Vehicles
 Truck
@@ -55,7 +55,7 @@ Low
 High
 Unlimited
 China
-Taiwan
+Japan
 Hi-speed start
 Low-speed start
 Lowlow-speed start
@@ -119,7 +119,6 @@ Screen Saver
 Beep Sound
 Language
 Frequency
-Flash
 Format
 Default Setting
 Version
@@ -143,7 +142,7 @@ to defaults
 SD Card
 All data will be
 deleted
-PLEASE INSERT SD CARD
+No Card
 No Card
 Mass Storage
 PC Camera

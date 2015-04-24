@@ -2491,11 +2491,21 @@ void gp_isp_start(INT32U dummy_addr,INT32U gpSENSOR_WIDTH, INT32U gpSENSOR_HEIGH
 	IspHybridRaw.DPCDefaultMode = 1;
 	IspHybridRaw.DPCn = 1;			
 	IspHybridRaw.DefectPixelSel = 0;
-	IspHybridRaw.DefectPixelEnable = DISABLE;
+	#if (USE_SENSOR_NAME == SENSOR_SOI_H22)
+	IspHybridRaw.DefectPixelEnable = ENABLE;
 	IspHybridRaw.CrosstalkEnable = DISABLE; 
+	#else
+	IspHybridRaw.DefectPixelEnable = DISABLE;
+	IspHybridRaw.CrosstalkEnable = ENABLE; 
+	#endif
 
+	#if (USE_SENSOR_NAME == SENSOR_SOI_H22)
+	IspHybridRaw.DPCth1 = 25; //55 -> 66, weak -> strong
+   	IspHybridRaw.DPCth2 = 35; //76 -> 55 -> 43, weak -> medium -> strong
+   	#else
 	IspHybridRaw.DPCth1 = 55; //55 -> 66, weak -> strong
    	IspHybridRaw.DPCth2 = 76; //76 -> 55 -> 43, weak -> medium -> strong
+   	#endif
    	IspHybridRaw.DPCth3 = 4; //if 3 line be filter
 /*
 #if (CDSP_DENOISE_LEVEL == BOTH_DENOISE)		

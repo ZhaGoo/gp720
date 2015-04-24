@@ -202,7 +202,7 @@
 	#define USE_G_SENSOR_NAME		        G_SENSOR_DA380 
 	#define USE_G_SENSOR_ACTIVE				1 	
 	#define CPU_DRAW_TIME_STAMP_BLACK_EDGE	0
-	#define RENAME_LOCK_FILE				0
+	#define RENAME_LOCK_FILE				1
 	#define USE_IOKEY_NO					1  // IO-Key 偵測時會用到這變量
 	#define USE_ADKEY_NO					6
 	#define KEY_TYPE						KEY_TYPE1
@@ -348,6 +348,8 @@
 	#define sensor_format					OV9712_RAW
 #endif
 
-#define Enable_Lane_Departure_Warning_System	0
+#define Enable_Lane_Departure_Warning_System	1
+#define NO_PARK_MODE                            1
+#define NO_BUGUANGDENG                          1
 
 #endif //__CUSTOMER_H__

@@ -1,0 +1,29 @@
+-- [06/10/14 14:18:09] -- Device '6&3b1a5120&0#{53' Start download
+-- [06/10/14 14:18:09] -- Begin Step 1 Action Name [Pre-Register]
+-- [06/10/14 14:18:09] -- Begin Step 2 Action Name [ISP Bin Download]
+-- [06/10/14 14:18:09] -- Writing File ".\code\gpl327xx_ispbin.hdb" to 0x20000000 memory type 0x03
+-- [06/10/14 14:18:09] -- Read address 0x20000000 size 0x4998 memory type 0x03 to file "Log/ReadVerify_Hub8Port2.bin"
+-- [06/10/14 14:18:09] -- Begin Step 3 Action Name [ISP Bin Start]
+-- [06/10/14 14:18:09] -- Begin Step 4 Action Name [Boot Header Parsing]
+-- [06/10/14 14:18:09] -- Writing File "..\outputbin\spi_bootheader.bin" to 0x00000000 memory type 0x00
+-- [06/10/14 14:18:09] -- Begin Step 5 Action Name [Get Nand Flash Info]
+-- [06/10/14 14:18:09] -- Step 5 Disable
+-- [06/10/14 14:18:09] -- Begin Step 6 Action Name [ChipErase]
+-- [06/10/14 14:18:22] -- Begin Step 7 Action Name [MBR Write]
+-- [06/10/14 14:18:22] -- Step 7 Disable
+-- [06/10/14 14:18:22] -- Begin Step 8 Action Name [BootHeader Write]
+-- [06/10/14 14:18:22] -- Writing File "..\outputbin\spi_bootheader.bin" to 0x00000000 memory type 0x00
+-- [06/10/14 14:18:22] -- Read address 0x00000000 size 0x200 memory type 0x85 to file "Log/ReadVerify_Hub8Port2.bin"
+-- [06/10/14 14:18:22] -- Begin Step 9 Action Name [BootLoader Write]
+-- [06/10/14 14:18:22] -- Writing File "..\outputbin\spi_bootloader.bin" to 0x00000000 memory type 0x00
+-- [06/10/14 14:18:22] -- Read address 0x00000000 size 0x2a00 memory type 0x86 to file "Log/ReadVerify_Hub8Port2.bin"
+-- [06/10/14 14:18:22] -- Begin Step 10 Action Name [App Area Program]
+-- [06/10/14 14:18:22] -- Writing File "..\outputbin\spi_apparea.bin" to 0x00000000 memory type 0x83
+-- [06/10/14 14:18:29] -- Read address 0x00000000 size 0x110000 memory type 0x83 to file "Log/ReadVerify_Hub8Port2.bin"
+-- [06/10/14 14:18:33] -- Begin Step 11 Action Name [Data Area Format]
+-- [06/10/14 14:18:33] -- Step 11 Disable
+-- [06/10/14 14:18:33] -- Begin Step 12 Action Name [Data Area Inital]
+-- [06/10/14 14:18:33] -- Step 12 Disable
+-- [06/10/14 14:18:33] -- Begin Step 13 Action Name [NVFlush]
+-- [06/10/14 14:18:33] -- Step 13 Disable
+-- [06/10/14 14:18:33] -- Download Completed!

@@ -60,6 +60,11 @@ void state_browse_entry(void *para, INT16U play_index)
 			continue;
 		}
 
+		#if defined(BOARD_X1LH)
+		if(msg_id == MSG_APQ_MODE)
+			msg_id = MSG_APQ_MENU_KEY_ACTIVE;
+		#endif
+	
 		switch (msg_id) {
 			case EVENT_APQ_ERR_MSG:
 				audio_temp = (STAudioConfirm *)ApQ_para;

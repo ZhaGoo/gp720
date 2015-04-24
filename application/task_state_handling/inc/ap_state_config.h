@@ -2,7 +2,8 @@
 
 #define CRC32_POLY     0xEDB88320
 
-#define ASCII_draw_char_width	0x0b
+//#define ASCII_draw_char_width	0x0b
+#define ASCII_draw_char_width	0x0e // young 20150414
 #define ASCII_draw_char_height	0x13
 extern void ap_state_config_initial(INT32S status);
 extern void ap_state_config_default_set(void);

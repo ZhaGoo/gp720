@@ -946,8 +946,9 @@ const INT16U *setting_play_table[] = {
 	icon_manu_play_protect
 };
 const INT16U *setting_base_table[] = {
-
+#if !NO_PARK_MODE // young 20150414
 	icon_manu_record_gsensor,
+#endif
 	icon_manu_base_date_time,
 	icon_manu_base_auto_power_off,
 	icon_manu_base_screen_saver,
@@ -958,7 +959,9 @@ const INT16U *setting_base_table[] = {
 	icon_manu_base_TV_mode,
 #endif
 	icon_manu_base_frequency,
+#if !NO_BUGUANGDENG // young 20150414
 	icon_capture_white_balance_daylight,
+#endif
 	icon_manu_base_format,
 	icon_manu_base_default_setting,
 	icon_manu_base_version
